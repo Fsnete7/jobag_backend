@@ -11,6 +11,7 @@
   <ItemGroup>
     <Folder Include="Domain\Repositories\" />
     <Folder Include="Domain\Services\Communication\" />
+    <Folder Include="Domain\Services\Communication\PostulantResponse" />
     <Folder Include="Extensions\" />
     <Folder Include="Mapping\" />
     <Folder Include="Services\" />
