@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace jobagapi.Domain.Models.PostulantBC
+namespace jobagapi.Domain.Models.PostulantSystem
 {
     public class User
     {

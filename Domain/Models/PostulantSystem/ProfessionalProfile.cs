@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace jobagapi.Domain.Models.PostulantBC
+namespace jobagapi.Domain.Models.PostulantSystem
 {
     public class ProfessionalProfile{
 
