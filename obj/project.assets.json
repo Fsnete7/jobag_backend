@@ -193,24 +193,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Windows 10\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\EDU\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Windows 10\\Documents\\jobagapi\\jobagapi.csproj",
+      "projectUniqueName": "C:\\Users\\EDU\\Desktop\\jobag_backend-main\\jobagapi.csproj",
       "projectName": "jobagapi",
-      "projectPath": "C:\\Users\\Windows 10\\Documents\\jobagapi\\jobagapi.csproj",
-      "packagesPath": "C:\\Users\\Windows 10\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Windows 10\\Documents\\jobagapi\\obj\\",
+      "projectPath": "C:\\Users\\EDU\\Desktop\\jobag_backend-main\\jobagapi.csproj",
+      "packagesPath": "C:\\Users\\EDU\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\EDU\\Desktop\\jobag_backend-main\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Windows 10\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\EDU\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -259,7 +254,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-rc.2.21505.57\\RuntimeIdentifierGraph.json"
       }
     }
   }
