@@ -14,10 +14,7 @@
     <Folder Include="Domain\Services\Communication\PostulantResponse" />
     <Folder Include="Extensions\" />
     <Folder Include="Mapping\" />
-    <Folder Include="Services\" />
     <Folder Include="Resources\" />
-    <Folder Include="Persistence\Contexts\" />
-    <Folder Include="Persistence\Repositories\" />
   </ItemGroup>
 
 </Project>
