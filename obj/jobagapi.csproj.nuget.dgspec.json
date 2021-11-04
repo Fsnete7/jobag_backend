@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\EDU\\Desktop\\jobag_backend-main\\jobagapi.csproj": {}
+    "C:\\Users\\eliza\\RiderProjects\\jobag_backend\\jobagapi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\EDU\\Desktop\\jobag_backend-main\\jobagapi.csproj": {
+    "C:\\Users\\eliza\\RiderProjects\\jobag_backend\\jobagapi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\EDU\\Desktop\\jobag_backend-main\\jobagapi.csproj",
+        "projectUniqueName": "C:\\Users\\eliza\\RiderProjects\\jobag_backend\\jobagapi.csproj",
         "projectName": "jobagapi",
-        "projectPath": "C:\\Users\\EDU\\Desktop\\jobag_backend-main\\jobagapi.csproj",
-        "packagesPath": "C:\\Users\\EDU\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\EDU\\Desktop\\jobag_backend-main\\obj\\",
+        "projectPath": "C:\\Users\\eliza\\RiderProjects\\jobag_backend\\jobagapi.csproj",
+        "packagesPath": "C:\\Users\\eliza\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\eliza\\RiderProjects\\jobag_backend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\EDU\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\eliza\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -40,6 +40,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.11, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.6.3, )"
@@ -63,7 +67,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-rc.2.21505.57\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }
