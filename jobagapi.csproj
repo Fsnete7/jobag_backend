@@ -24,7 +24,6 @@
     <Folder Include="Domain\Services\Communication\" />
     <Folder Include="Mapping" />
     <Folder Include="Mapping\" />
-    <Folder Include="Services\" />
     <Folder Include="Resources\" />
     <Folder Include="Persistence\Repositories\" />
   </ItemGroup>
