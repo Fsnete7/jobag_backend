@@ -8,7 +8,7 @@ namespace jobagapi.Domain.Repositories.PostulantRepositories
     {
         Task AddAsync(User user);
         Task<User> FindById(int id);
-        Task<User> Authenticate(string email, string password);
+        // Task<User> Authenticate(string email, string password);
         void Remove(User user);
         Task<IEnumerable<User>> ListAsync();
     }

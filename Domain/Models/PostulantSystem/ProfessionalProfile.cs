@@ -8,7 +8,9 @@ namespace jobagapi.Domain.Models.PostulantSystem
         public string Ocupation { get; set; }
 
         public string VideoUrl { get; set; }
-
+        
+        public Postulant Postulant { get; set; }
+        
         public List<Language> Languages { get; set; }
         public List<Skill> Skills { get; set; }
         public List<Degree> Degrees { get; set; }
