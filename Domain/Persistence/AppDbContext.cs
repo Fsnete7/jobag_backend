@@ -7,7 +7,7 @@ namespace jobagapi.Domain.Persistence
     public class AppDbContext : DbContext 
     {
         public DbSet<Sector>  Sectors { get; set; }
-        public DbSet<Employeer> Employeers { get; set; }
+        public DbSet<Employer> Employeers { get; set; }
         public DbSet<CompanyProfile> CompanyProfiles { get; set; }
         public DbSet<JobOffer> JobOffers { get; set; }
         public DbSet<MailMessage> MailMessages { get; set; } 
