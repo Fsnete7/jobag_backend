@@ -8,5 +8,7 @@ namespace jobagapi.Domain.Services.Employer
     {
         
         Task<IEnumerable<CompanyProfile>> ListAsync();
+        Task<IEnumerable<CompanyProfile>> GetByIdAsync(int id);
+
     }
 }
