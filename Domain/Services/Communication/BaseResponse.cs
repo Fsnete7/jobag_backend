@@ -1,14 +1,22 @@
-﻿namespace jobagapi.Domain.Services.Communication
+﻿
+namespace jobagapi.Domain.Services.Communication
 {
-    public class BaseResponse
+    public abstract class BaseResponse<T>
     {
-        public BaseResponse(bool succes, string message)
+        public bool Success { get; protected set; }
+        public string Message { get; protected set; }
+        public T Resource { get; set; }
+
+        public BaseResponse(T resource)
         {
-            Succes = succes;
+            Resource = resource;
+            Success = true;
+            Message = string.Empty;
+        }
+        public BaseResponse(string message)
+        {
+            Success = false;
             Message = message;
         }
-
-        public  bool Succes { get; protected set; }
-        public string Message { get; protected set; }
     }
 }

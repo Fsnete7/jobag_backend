@@ -4,9 +4,9 @@ namespace jobagapi.Extensions
 {
     public static class ModelBuilderExtensions
     {
-        public static void UseSnakeCaseNamingConvention(this ModelBuilder builder)
+        public static void ApplySnakeCaseNamingConvention(this ModelBuilder modelBuilder)
         {
-            foreach (var entity in builder.Model.GetEntityTypes())
+            foreach (var entity in modelBuilder.Model.GetEntityTypes())
             {
                 if (entity.BaseType == null)
                     entity.SetTableName(entity.GetTableName().ToSnakeCase());
@@ -17,7 +17,7 @@ namespace jobagapi.Extensions
                 foreach (var foreignKey in entity.GetForeignKeys())
                     foreignKey.SetConstraintName(foreignKey.GetConstraintName().ToSnakeCase());
                 foreach (var index in entity.GetIndexes())
-                    index.SetDatabaseName(index.GetDatabaseName().ToSnakeCase());
+                    index.SetName(index.GetName().ToSnakeCase());
             }
         }
     }
