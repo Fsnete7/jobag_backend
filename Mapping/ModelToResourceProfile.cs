@@ -8,7 +8,7 @@ namespace jobagapi.Mapping
     {
         public ModelToResourceProfile()
         {
-            //CreateMap<JobOffer, jobOfferResource>();
+            CreateMap<JobOffer, jobOfferResource>();
         }
     }
 }

@@ -16,6 +16,7 @@ using jobagapi.Domain.Services;
 using jobagapi.Persistence.Contexts;
 using jobagapi.Persistence.Repositories;
 using jobagapi.Persistence.Repositories.JobOffer.JobOffer;
+using jobagapi.Services;
 using Microsoft.EntityFrameworkCore;
 
 namespace jobagapi
@@ -46,11 +47,11 @@ namespace jobagapi
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Jobag API", Version = "v1" });
             });
 
-            //services.AddScoped<IJobOfferRepository, JobOfferRepository>();
-            // services.AddScoped<IJobOfferService, JobOfferService>();
+            services.AddScoped<IJobOfferRepository, JobOfferRepository>();
+            services.AddScoped<IJobOfferService, JobOfferService>();
 
-            // services.AddScoped<IMailMessageRepository, MailMessageRepository>();
-            //services.AddScoped<IMailiMessageService, MailMessageService>();
+            services.AddScoped<IMailMessageRepository, MailMessageRepository>();
+            services.AddScoped<IMailiMessageService, MailMessageService>();
 
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             // Para configurar autoMapper

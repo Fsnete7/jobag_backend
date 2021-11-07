@@ -6,6 +6,6 @@ namespace jobagapi.Domain.Models
     {
         public int Id { get; set; }
         //public List<ProfessionalProfile> PostulantProfiles { get; set; }
-        //public JobOffer JobOffer { get; set; }
+        public JobOffer JobOffer { get; set; }
     }
 }
