@@ -11,6 +11,12 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using jobagapi.Domain.Repositories;
+using jobagapi.Domain.Services;
+using jobagapi.Persistence.Contexts;
+using jobagapi.Persistence.Repositories;
+using jobagapi.Persistence.Repositories.JobOffer.JobOffer;
+using Microsoft.EntityFrameworkCore;
 
 namespace jobagapi
 {
@@ -26,12 +32,29 @@ namespace jobagapi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
+            services.AddRouting(options => options.LowercaseUrls = true);
+            
             services.AddControllers();
+
+            services.AddDbContext<AppDbContext>(options =>
+            {
+                options.UseInMemoryDatabase("jobag-api-in-memory");
+            });
+            
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "jobagapi", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Jobag API", Version = "v1" });
             });
+
+            //services.AddScoped<IJobOfferRepository, JobOfferRepository>();
+            // services.AddScoped<IJobOfferService, JobOfferService>();
+
+            // services.AddScoped<IMailMessageRepository, MailMessageRepository>();
+            //services.AddScoped<IMailiMessageService, MailMessageService>();
+
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
+            // Para configurar autoMapper
+            services.AddAutoMapper(typeof(Startup));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -41,7 +64,7 @@ namespace jobagapi
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "jobagapi v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Jobag API v1"));
             }
 
             app.UseHttpsRedirection();
