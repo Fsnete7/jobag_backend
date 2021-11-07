@@ -10,8 +10,8 @@ namespace jobagapi.Resources
         //[MaxLength(250)]
         //public List<ProfessionalProfile> PostulantProfiles { get; set; }
         
-        [Required]
-        [MaxLength(30)]
-        public JobOffer JobOffer { get; set; }
+        //[Required]
+        //[MaxLength(30)]
+        //public JobOffer JobOffer { get; set; }
     }
 }
