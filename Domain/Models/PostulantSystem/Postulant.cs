@@ -10,8 +10,5 @@ namespace jobagapi.Domain.Models.PostulantSystem
     {
         public string CivilStatus { get; set; }
         
-        public int ProfileId { get; set; }
-        
-        public ProfessionalProfile Profile { get; set; }
-    }
+      }
 }
