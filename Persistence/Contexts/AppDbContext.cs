@@ -1,4 +1,5 @@
 ﻿using jobagapi.Domain.Models;
+using jobagapi.Domain.Models.EmployerSystem;
 using jobagapi.Domain.Models.JobOfferSystem;
 using jobagapi.Domain.Models.PostulantSystem;
 using jobagapi.Domain.Models.SuscriptionSystem;
@@ -9,6 +10,9 @@ namespace jobagapi.Persistence.Contexts
 {
     public class AppDbContext : DbContext
     {
+        public  DbSet<Employer> Employers { get; set; }
+        public  DbSet<Sector> Sectors { get; set; }
+        public  DbSet<CompanyProfile> CompanyProfiles { get; set; }
         public DbSet<JobOffer> JobOffers { get; set; }
         public DbSet<MailMessage> MailMessages { get; set; }
         
@@ -60,6 +64,13 @@ namespace jobagapi.Persistence.Contexts
                     { Id = 1, Message = "Hola, que te parece jobag?" }
             );
             
+            //---------------- Employer -------
+            // Constrains
+            builder.Entity<Employer>().ToTable("Employers");
+            builder.Entity<Employer>().HasKey(p => p.Id);
+            builder.Entity<Employer>().Property(p => p.Id).IsRequired().ValueGeneratedOnAdd();
+            builder.Entity<Employer>().Property(p => p.Dni).IsRequired();
+
             builder.UseSnakeCaseNamingConvention();
         }
     }
