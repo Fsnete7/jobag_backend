@@ -1,6 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using jobagapi.Domain.Models.EmployerSystem;
+using jobagapi.Domain.Services.Communication.CompanyProfileResponse;
+using jobagapi.Domain.Services.Communication.EmployerResponse;
 
 namespace jobagapi.Domain.Services.EmployerServices
 {
@@ -8,7 +10,10 @@ namespace jobagapi.Domain.Services.EmployerServices
     {
         
         Task<IEnumerable<CompanyProfile>> ListAsync();
-        Task<IEnumerable<CompanyProfile>> GetByIdAsync(int id);
+        Task<CompanyProfileResponse> SaveAsync(CompanyProfile companyProfile);
 
+        Task<CompanyProfileResponse> UpdateAsync(int id, CompanyProfile companyProfile);
+
+        Task<CompanyProfileResponse> DeletAsync(int id);
     }
 }
