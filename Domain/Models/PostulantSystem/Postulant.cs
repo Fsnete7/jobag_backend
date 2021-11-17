@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using jobagapi.Domain.Models.SubscriptionSystem;
 
 namespace jobagapi.Domain.Models.PostulantSystem
 {
@@ -9,8 +7,6 @@ namespace jobagapi.Domain.Models.PostulantSystem
     {
         public string CivilStatus { get; set; }
         
-        public int ProfileId { get; set; }
-        
-        public ProfessionalProfile Profile { get; set; }
+
     }
 }

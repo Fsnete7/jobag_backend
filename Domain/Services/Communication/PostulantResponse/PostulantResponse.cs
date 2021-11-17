@@ -1,5 +1,5 @@
 ﻿using jobagapi.Domain.Models.PostulantSystem;
-using Newtonsoft.Json.Bson;
+ 
 
 namespace jobagapi.Domain.Services.Communication.PostulantResponse
 {

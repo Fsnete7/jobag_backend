@@ -1,6 +1,8 @@
 ﻿using AutoMapper;
 using jobagapi.Domain.Models;
+using jobagapi.Domain.Models.JobOfferSystem;
 using jobagapi.Resources;
+using jobagapi.Resources.JobOfferResources;
 
 
 namespace jobagapi.Mapping
@@ -9,8 +11,8 @@ namespace jobagapi.Mapping
     {
         public ResourceToModelProfile()
         {
-            //CreateMap<SaveJobOfferResource, JobOffer>();
-            //CreateMap<SaveMailMessageResource, MailMessage>();
+            CreateMap<SaveJobOfferResource, JobOffer>();
+            CreateMap<SaveMailMessageResource, MailMessage>();
         }
     }
 }

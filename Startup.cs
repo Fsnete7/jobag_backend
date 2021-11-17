@@ -12,10 +12,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using jobagapi.Domain.Repositories;
+using jobagapi.Domain.Repositories.JobOfferRepositories;
+using jobagapi.Domain.Repositories.SubscriptionRepositories;
 using jobagapi.Domain.Services;
+using jobagapi.Domain.Services.JobOfferServices;
+using jobagapi.Domain.Services.SubscriptionServices;
 using jobagapi.Persistence.Contexts;
 using jobagapi.Persistence.Repositories;
-using jobagapi.Persistence.Repositories.JobOffer.JobOffer;
+using jobagapi.Persistence.Repositories.JobOfferPersistence;
+using jobagapi.Persistence.Repositories.SubscriptionPersistence;
+using jobagapi.Services;
+using jobagapi.Services.JobOfferServicesImpl;
+using jobagapi.Services.SubscriptionServicesImpl;
 using Microsoft.EntityFrameworkCore;
 
 namespace jobagapi
@@ -46,14 +54,22 @@ namespace jobagapi
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Jobag API", Version = "v1" });
             });
 
-            //services.AddScoped<IJobOfferRepository, JobOfferRepository>();
-            // services.AddScoped<IJobOfferService, JobOfferService>();
+            services.AddScoped<IJobOfferRepository, JobOfferRepository>();
+            services.AddScoped<IJobOfferService, JobOfferService>();
 
-            // services.AddScoped<IMailMessageRepository, MailMessageRepository>();
-            //services.AddScoped<IMailiMessageService, MailMessageService>();
+            services.AddScoped<IMailMessageRepository, MailMessageRepository>();
+            services.AddScoped<IMailiMessageService, MailMessageService>();
+
+            services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IUserService,UserService>();
+            
+            services.AddScoped<ISubscriptionPlanRepository, SubscriptionPlanRepository>();
+            services.AddScoped<ISubscriptionPlanService, SubscriptionPlanService>();
+            
+            services.AddScoped<IPaymentRepository, PaymentRepository>();
+            services.AddScoped<IPaymentService, PaymentService>();
 
             services.AddScoped<IUnitOfWork, UnitOfWork>();
-            // Para configurar autoMapper
             services.AddAutoMapper(typeof(Startup));
         }
 

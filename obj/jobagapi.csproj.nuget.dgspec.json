@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\eliza\\RiderProjects\\jobag_backend1\\jobagapi.csproj": {}
+    "D:\\git\\uwu\\jobag_backend\\jobagapi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\eliza\\RiderProjects\\jobag_backend1\\jobagapi.csproj": {
+    "D:\\git\\uwu\\jobag_backend\\jobagapi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\eliza\\RiderProjects\\jobag_backend1\\jobagapi.csproj",
+        "projectUniqueName": "D:\\git\\uwu\\jobag_backend\\jobagapi.csproj",
         "projectName": "jobagapi",
-        "projectPath": "C:\\Users\\eliza\\RiderProjects\\jobag_backend1\\jobagapi.csproj",
-        "packagesPath": "C:\\Users\\eliza\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\eliza\\RiderProjects\\jobag_backend1\\obj\\",
+        "projectPath": "D:\\git\\uwu\\jobag_backend\\jobagapi.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "D:\\git\\uwu\\jobag_backend\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\eliza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -48,15 +52,17 @@
               "target": "Package",
               "version": "[8.1.1, )"
             },
-            "EntityFramework": {
-              "target": "Package",
-              "version": "[6.4.4, )"
-            },
-            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+            "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.11, )"
             },
-            "Microsoft.EntityFrameworkCore": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
               "target": "Package",
               "version": "[5.0.11, )"
             },
@@ -68,25 +74,9 @@
               "target": "Package",
               "version": "[1.1.6, )"
             },
-            "MySql.Data.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[8.0.22, )"
-            },
-            "SpecFlow": {
-              "target": "Package",
-              "version": "[3.9.22, )"
-            },
-            "SpecFlow.Tools.MsBuild.Generation": {
-              "target": "Package",
-              "version": "[3.9.22, )"
-            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.6.3, )"
-            },
-            "System.IdentityModel.Tokens.Jwt": {
-              "target": "Package",
-              "version": "[6.14.0, )"
             }
           },
           "imports": [
@@ -107,7 +97,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -11,5 +11,6 @@ namespace jobagapi.Domain.Repositories.PostulantRepositories
         void Update(Postulant postulant);
         void Remove(Postulant postulant);
         Task<IEnumerable<Postulant>> FindPostulantByName(string name);
+        Task AddAsync(Postulant postulant);
     }
 }

@@ -37,126 +37,85 @@ C:\Users\EDU\Desktop\jobag_backend-main\obj\Debug\net5.0\jobagapi.pdb
 C:\Users\EDU\Desktop\jobag_backend-main\obj\Debug\net5.0\jobagapi.genruntimeconfig.cache
 C:\Users\EDU\Desktop\jobag_backend-main\bin\Debug\net5.0\AutoMapper.dll
 C:\Users\EDU\Desktop\jobag_backend-main\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
-C:\Users\Victo\Desktop\pium\bin\Debug\net5.0\appsettings.Development.json
-C:\Users\Victo\Desktop\pium\bin\Debug\net5.0\appsettings.json
-C:\Users\Victo\Desktop\pium\bin\Debug\net5.0\global.json
-C:\Users\Victo\Desktop\pium\bin\Debug\net5.0\jobagapi.exe
-C:\Users\Victo\Desktop\pium\bin\Debug\net5.0\jobagapi.deps.json
-C:\Users\Victo\Desktop\pium\bin\Debug\net5.0\jobagapi.runtimeconfig.json
-C:\Users\Victo\Desktop\pium\bin\Debug\net5.0\jobagapi.runtimeconfig.dev.json
-C:\Users\Victo\Desktop\pium\bin\Debug\net5.0\jobagapi.dll
-C:\Users\Victo\Desktop\pium\bin\Debug\net5.0\ref\jobagapi.dll
-C:\Users\Victo\Desktop\pium\bin\Debug\net5.0\jobagapi.pdb
-C:\Users\Victo\Desktop\pium\bin\Debug\net5.0\AutoMapper.dll
-C:\Users\Victo\Desktop\pium\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
-C:\Users\Victo\Desktop\pium\bin\Debug\net5.0\Humanizer.dll
-C:\Users\Victo\Desktop\pium\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
-C:\Users\Victo\Desktop\pium\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-C:\Users\Victo\Desktop\pium\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
-C:\Users\Victo\Desktop\pium\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.InMemory.dll
-C:\Users\Victo\Desktop\pium\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
-C:\Users\Victo\Desktop\pium\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.Design.dll
-C:\Users\Victo\Desktop\pium\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
-C:\Users\Victo\Desktop\pium\bin\Debug\net5.0\Microsoft.OpenApi.dll
-C:\Users\Victo\Desktop\pium\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
-C:\Users\Victo\Desktop\pium\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-C:\Users\Victo\Desktop\pium\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Users\Victo\Desktop\pium\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
-C:\Users\Victo\Desktop\pium\obj\Debug\net5.0\jobagapi.csproj.AssemblyReference.cache
-C:\Users\Victo\Desktop\pium\obj\Debug\net5.0\jobagapi.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Victo\Desktop\pium\obj\Debug\net5.0\jobagapi.AssemblyInfoInputs.cache
-C:\Users\Victo\Desktop\pium\obj\Debug\net5.0\jobagapi.AssemblyInfo.cs
-C:\Users\Victo\Desktop\pium\obj\Debug\net5.0\jobagapi.csproj.CoreCompileInputs.cache
-C:\Users\Victo\Desktop\pium\obj\Debug\net5.0\jobagapi.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\Victo\Desktop\pium\obj\Debug\net5.0\jobagapi.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Victo\Desktop\pium\obj\Debug\net5.0\staticwebassets\jobagapi.StaticWebAssets.Manifest.cache
-C:\Users\Victo\Desktop\pium\obj\Debug\net5.0\staticwebassets\jobagapi.StaticWebAssets.xml
-C:\Users\Victo\Desktop\pium\obj\Debug\net5.0\scopedcss\bundle\jobagapi.styles.css
-C:\Users\Victo\Desktop\pium\obj\Debug\net5.0\jobagapi.RazorTargetAssemblyInfo.cache
-C:\Users\Victo\Desktop\pium\obj\Debug\net5.0\jobagapi.csproj.CopyComplete
-C:\Users\Victo\Desktop\pium\obj\Debug\net5.0\jobagapi.dll
-C:\Users\Victo\Desktop\pium\obj\Debug\net5.0\ref\jobagapi.dll
-C:\Users\Victo\Desktop\pium\obj\Debug\net5.0\jobagapi.pdb
-C:\Users\Victo\Desktop\pium\obj\Debug\net5.0\jobagapi.genruntimeconfig.cache
-C:\Users\Victo\Desktop\mi parte\bin\Debug\net5.0\appsettings.Development.json
-C:\Users\Victo\Desktop\mi parte\bin\Debug\net5.0\appsettings.json
-C:\Users\Victo\Desktop\mi parte\bin\Debug\net5.0\global.json
-C:\Users\Victo\Desktop\mi parte\bin\Debug\net5.0\jobagapi.exe
-C:\Users\Victo\Desktop\mi parte\bin\Debug\net5.0\jobagapi.deps.json
-C:\Users\Victo\Desktop\mi parte\bin\Debug\net5.0\jobagapi.runtimeconfig.json
-C:\Users\Victo\Desktop\mi parte\bin\Debug\net5.0\jobagapi.runtimeconfig.dev.json
-C:\Users\Victo\Desktop\mi parte\bin\Debug\net5.0\jobagapi.dll
-C:\Users\Victo\Desktop\mi parte\bin\Debug\net5.0\ref\jobagapi.dll
-C:\Users\Victo\Desktop\mi parte\bin\Debug\net5.0\jobagapi.pdb
-C:\Users\Victo\Desktop\mi parte\bin\Debug\net5.0\AutoMapper.dll
-C:\Users\Victo\Desktop\mi parte\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
-C:\Users\Victo\Desktop\mi parte\bin\Debug\net5.0\Humanizer.dll
-C:\Users\Victo\Desktop\mi parte\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
-C:\Users\Victo\Desktop\mi parte\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-C:\Users\Victo\Desktop\mi parte\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
-C:\Users\Victo\Desktop\mi parte\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.InMemory.dll
-C:\Users\Victo\Desktop\mi parte\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
-C:\Users\Victo\Desktop\mi parte\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.Design.dll
-C:\Users\Victo\Desktop\mi parte\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
-C:\Users\Victo\Desktop\mi parte\bin\Debug\net5.0\Microsoft.OpenApi.dll
-C:\Users\Victo\Desktop\mi parte\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
-C:\Users\Victo\Desktop\mi parte\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-C:\Users\Victo\Desktop\mi parte\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Users\Victo\Desktop\mi parte\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
-C:\Users\Victo\Desktop\mi parte\obj\Debug\net5.0\jobagapi.csproj.AssemblyReference.cache
-C:\Users\Victo\Desktop\mi parte\obj\Debug\net5.0\jobagapi.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Victo\Desktop\mi parte\obj\Debug\net5.0\jobagapi.AssemblyInfoInputs.cache
-C:\Users\Victo\Desktop\mi parte\obj\Debug\net5.0\jobagapi.AssemblyInfo.cs
-C:\Users\Victo\Desktop\mi parte\obj\Debug\net5.0\jobagapi.csproj.CoreCompileInputs.cache
-C:\Users\Victo\Desktop\mi parte\obj\Debug\net5.0\jobagapi.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\Victo\Desktop\mi parte\obj\Debug\net5.0\jobagapi.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Victo\Desktop\mi parte\obj\Debug\net5.0\staticwebassets\jobagapi.StaticWebAssets.Manifest.cache
-C:\Users\Victo\Desktop\mi parte\obj\Debug\net5.0\staticwebassets\jobagapi.StaticWebAssets.xml
-C:\Users\Victo\Desktop\mi parte\obj\Debug\net5.0\scopedcss\bundle\jobagapi.styles.css
-C:\Users\Victo\Desktop\mi parte\obj\Debug\net5.0\jobagapi.RazorTargetAssemblyInfo.cache
-C:\Users\Victo\Desktop\mi parte\obj\Debug\net5.0\jobagapi.csproj.CopyComplete
-C:\Users\Victo\Desktop\mi parte\obj\Debug\net5.0\jobagapi.dll
-C:\Users\Victo\Desktop\mi parte\obj\Debug\net5.0\ref\jobagapi.dll
-C:\Users\Victo\Desktop\mi parte\obj\Debug\net5.0\jobagapi.pdb
-C:\Users\Victo\Desktop\mi parte\obj\Debug\net5.0\jobagapi.genruntimeconfig.cache
-C:\Users\Victo\Desktop\entrega parte\obj\Debug\net5.0\jobagapi.csproj.AssemblyReference.cache
-C:\Users\Victo\Desktop\entrega parte\obj\Debug\net5.0\jobagapi.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Victo\Desktop\entrega parte\obj\Debug\net5.0\jobagapi.AssemblyInfoInputs.cache
-C:\Users\Victo\Desktop\entrega parte\obj\Debug\net5.0\jobagapi.AssemblyInfo.cs
-C:\Users\Victo\Desktop\entrega parte\obj\Debug\net5.0\jobagapi.csproj.CoreCompileInputs.cache
-C:\Users\Victo\Desktop\entrega parte\obj\Debug\net5.0\jobagapi.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\Victo\Desktop\entrega parte\obj\Debug\net5.0\jobagapi.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Victo\Desktop\entrega parte\obj\Debug\net5.0\jobagapi.dll
-C:\Users\Victo\Desktop\entrega parte\obj\Debug\net5.0\ref\jobagapi.dll
-C:\Users\Victo\Desktop\entrega parte\obj\Debug\net5.0\jobagapi.pdb
-C:\Users\Victo\Desktop\entrega parte\bin\Debug\net5.0\appsettings.Development.json
-C:\Users\Victo\Desktop\entrega parte\bin\Debug\net5.0\appsettings.json
-C:\Users\Victo\Desktop\entrega parte\bin\Debug\net5.0\global.json
-C:\Users\Victo\Desktop\entrega parte\bin\Debug\net5.0\jobagapi.exe
-C:\Users\Victo\Desktop\entrega parte\bin\Debug\net5.0\jobagapi.deps.json
-C:\Users\Victo\Desktop\entrega parte\bin\Debug\net5.0\jobagapi.runtimeconfig.json
-C:\Users\Victo\Desktop\entrega parte\bin\Debug\net5.0\jobagapi.runtimeconfig.dev.json
-C:\Users\Victo\Desktop\entrega parte\bin\Debug\net5.0\jobagapi.dll
-C:\Users\Victo\Desktop\entrega parte\bin\Debug\net5.0\ref\jobagapi.dll
-C:\Users\Victo\Desktop\entrega parte\bin\Debug\net5.0\jobagapi.pdb
-C:\Users\Victo\Desktop\entrega parte\bin\Debug\net5.0\AutoMapper.dll
-C:\Users\Victo\Desktop\entrega parte\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
-C:\Users\Victo\Desktop\entrega parte\bin\Debug\net5.0\Humanizer.dll
-C:\Users\Victo\Desktop\entrega parte\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
-C:\Users\Victo\Desktop\entrega parte\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-C:\Users\Victo\Desktop\entrega parte\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
-C:\Users\Victo\Desktop\entrega parte\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.InMemory.dll
-C:\Users\Victo\Desktop\entrega parte\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
-C:\Users\Victo\Desktop\entrega parte\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.Design.dll
-C:\Users\Victo\Desktop\entrega parte\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
-C:\Users\Victo\Desktop\entrega parte\bin\Debug\net5.0\Microsoft.OpenApi.dll
-C:\Users\Victo\Desktop\entrega parte\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
-C:\Users\Victo\Desktop\entrega parte\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-C:\Users\Victo\Desktop\entrega parte\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Users\Victo\Desktop\entrega parte\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
-C:\Users\Victo\Desktop\entrega parte\obj\Debug\net5.0\staticwebassets\jobagapi.StaticWebAssets.Manifest.cache
-C:\Users\Victo\Desktop\entrega parte\obj\Debug\net5.0\staticwebassets\jobagapi.StaticWebAssets.xml
-C:\Users\Victo\Desktop\entrega parte\obj\Debug\net5.0\scopedcss\bundle\jobagapi.styles.css
-C:\Users\Victo\Desktop\entrega parte\obj\Debug\net5.0\jobagapi.RazorTargetAssemblyInfo.cache
-C:\Users\Victo\Desktop\entrega parte\obj\Debug\net5.0\jobagapi.csproj.CopyComplete
-C:\Users\Victo\Desktop\entrega parte\obj\Debug\net5.0\jobagapi.genruntimeconfig.cache
+C:\Users\Windows 10\Desktop\xd\jobag_backend-feature-controllers-Eduardo\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\Windows 10\Desktop\xd\jobag_backend-feature-controllers-Eduardo\bin\Debug\net5.0\appsettings.json
+C:\Users\Windows 10\Desktop\xd\jobag_backend-feature-controllers-Eduardo\bin\Debug\net5.0\global.json
+C:\Users\Windows 10\Desktop\xd\jobag_backend-feature-controllers-Eduardo\bin\Debug\net5.0\jobagapi.exe
+C:\Users\Windows 10\Desktop\xd\jobag_backend-feature-controllers-Eduardo\bin\Debug\net5.0\jobagapi.deps.json
+C:\Users\Windows 10\Desktop\xd\jobag_backend-feature-controllers-Eduardo\bin\Debug\net5.0\jobagapi.runtimeconfig.json
+C:\Users\Windows 10\Desktop\xd\jobag_backend-feature-controllers-Eduardo\bin\Debug\net5.0\jobagapi.runtimeconfig.dev.json
+C:\Users\Windows 10\Desktop\xd\jobag_backend-feature-controllers-Eduardo\bin\Debug\net5.0\jobagapi.dll
+C:\Users\Windows 10\Desktop\xd\jobag_backend-feature-controllers-Eduardo\bin\Debug\net5.0\ref\jobagapi.dll
+C:\Users\Windows 10\Desktop\xd\jobag_backend-feature-controllers-Eduardo\bin\Debug\net5.0\jobagapi.pdb
+C:\Users\Windows 10\Desktop\xd\jobag_backend-feature-controllers-Eduardo\bin\Debug\net5.0\AutoMapper.dll
+C:\Users\Windows 10\Desktop\xd\jobag_backend-feature-controllers-Eduardo\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Windows 10\Desktop\xd\jobag_backend-feature-controllers-Eduardo\bin\Debug\net5.0\Humanizer.dll
+C:\Users\Windows 10\Desktop\xd\jobag_backend-feature-controllers-Eduardo\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Windows 10\Desktop\xd\jobag_backend-feature-controllers-Eduardo\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Windows 10\Desktop\xd\jobag_backend-feature-controllers-Eduardo\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Windows 10\Desktop\xd\jobag_backend-feature-controllers-Eduardo\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Users\Windows 10\Desktop\xd\jobag_backend-feature-controllers-Eduardo\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Windows 10\Desktop\xd\jobag_backend-feature-controllers-Eduardo\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.Design.dll
+C:\Users\Windows 10\Desktop\xd\jobag_backend-feature-controllers-Eduardo\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Windows 10\Desktop\xd\jobag_backend-feature-controllers-Eduardo\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Users\Windows 10\Desktop\xd\jobag_backend-feature-controllers-Eduardo\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Windows 10\Desktop\xd\jobag_backend-feature-controllers-Eduardo\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Windows 10\Desktop\xd\jobag_backend-feature-controllers-Eduardo\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Windows 10\Desktop\xd\jobag_backend-feature-controllers-Eduardo\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Windows 10\Desktop\xd\jobag_backend-feature-controllers-Eduardo\obj\Debug\net5.0\jobagapi.csprojAssemblyReference.cache
+C:\Users\Windows 10\Desktop\xd\jobag_backend-feature-controllers-Eduardo\obj\Debug\net5.0\jobagapi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Windows 10\Desktop\xd\jobag_backend-feature-controllers-Eduardo\obj\Debug\net5.0\jobagapi.AssemblyInfoInputs.cache
+C:\Users\Windows 10\Desktop\xd\jobag_backend-feature-controllers-Eduardo\obj\Debug\net5.0\jobagapi.AssemblyInfo.cs
+C:\Users\Windows 10\Desktop\xd\jobag_backend-feature-controllers-Eduardo\obj\Debug\net5.0\jobagapi.csproj.CoreCompileInputs.cache
+C:\Users\Windows 10\Desktop\xd\jobag_backend-feature-controllers-Eduardo\obj\Debug\net5.0\jobagapi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Windows 10\Desktop\xd\jobag_backend-feature-controllers-Eduardo\obj\Debug\net5.0\jobagapi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Windows 10\Desktop\xd\jobag_backend-feature-controllers-Eduardo\obj\Debug\net5.0\staticwebassets\jobagapi.StaticWebAssets.Manifest.cache
+C:\Users\Windows 10\Desktop\xd\jobag_backend-feature-controllers-Eduardo\obj\Debug\net5.0\staticwebassets\jobagapi.StaticWebAssets.xml
+C:\Users\Windows 10\Desktop\xd\jobag_backend-feature-controllers-Eduardo\obj\Debug\net5.0\scopedcss\bundle\jobagapi.styles.css
+C:\Users\Windows 10\Desktop\xd\jobag_backend-feature-controllers-Eduardo\obj\Debug\net5.0\jobagapi.RazorTargetAssemblyInfo.cache
+C:\Users\Windows 10\Desktop\xd\jobag_backend-feature-controllers-Eduardo\obj\Debug\net5.0\jobagapi.csproj.CopyComplete
+C:\Users\Windows 10\Desktop\xd\jobag_backend-feature-controllers-Eduardo\obj\Debug\net5.0\jobagapi.dll
+C:\Users\Windows 10\Desktop\xd\jobag_backend-feature-controllers-Eduardo\obj\Debug\net5.0\ref\jobagapi.dll
+C:\Users\Windows 10\Desktop\xd\jobag_backend-feature-controllers-Eduardo\obj\Debug\net5.0\jobagapi.pdb
+C:\Users\Windows 10\Desktop\xd\jobag_backend-feature-controllers-Eduardo\obj\Debug\net5.0\jobagapi.genruntimeconfig.cache
+D:\git\uwu\jobag_backend\bin\Debug\net5.0\appsettings.Development.json
+D:\git\uwu\jobag_backend\bin\Debug\net5.0\appsettings.json
+D:\git\uwu\jobag_backend\bin\Debug\net5.0\global.json
+D:\git\uwu\jobag_backend\bin\Debug\net5.0\jobagapi.exe
+D:\git\uwu\jobag_backend\bin\Debug\net5.0\jobagapi.deps.json
+D:\git\uwu\jobag_backend\bin\Debug\net5.0\jobagapi.runtimeconfig.json
+D:\git\uwu\jobag_backend\bin\Debug\net5.0\jobagapi.runtimeconfig.dev.json
+D:\git\uwu\jobag_backend\bin\Debug\net5.0\jobagapi.dll
+D:\git\uwu\jobag_backend\bin\Debug\net5.0\ref\jobagapi.dll
+D:\git\uwu\jobag_backend\bin\Debug\net5.0\jobagapi.pdb
+D:\git\uwu\jobag_backend\bin\Debug\net5.0\AutoMapper.dll
+D:\git\uwu\jobag_backend\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\git\uwu\jobag_backend\bin\Debug\net5.0\Humanizer.dll
+D:\git\uwu\jobag_backend\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+D:\git\uwu\jobag_backend\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\git\uwu\jobag_backend\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\git\uwu\jobag_backend\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.InMemory.dll
+D:\git\uwu\jobag_backend\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\git\uwu\jobag_backend\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.Design.dll
+D:\git\uwu\jobag_backend\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+D:\git\uwu\jobag_backend\bin\Debug\net5.0\Microsoft.OpenApi.dll
+D:\git\uwu\jobag_backend\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\git\uwu\jobag_backend\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\git\uwu\jobag_backend\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\git\uwu\jobag_backend\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+D:\git\uwu\jobag_backend\obj\Debug\net5.0\jobagapi.csproj.AssemblyReference.cache
+D:\git\uwu\jobag_backend\obj\Debug\net5.0\jobagapi.GeneratedMSBuildEditorConfig.editorconfig
+D:\git\uwu\jobag_backend\obj\Debug\net5.0\jobagapi.AssemblyInfoInputs.cache
+D:\git\uwu\jobag_backend\obj\Debug\net5.0\jobagapi.AssemblyInfo.cs
+D:\git\uwu\jobag_backend\obj\Debug\net5.0\jobagapi.csproj.CoreCompileInputs.cache
+D:\git\uwu\jobag_backend\obj\Debug\net5.0\jobagapi.MvcApplicationPartsAssemblyInfo.cs
+D:\git\uwu\jobag_backend\obj\Debug\net5.0\jobagapi.MvcApplicationPartsAssemblyInfo.cache
+D:\git\uwu\jobag_backend\obj\Debug\net5.0\staticwebassets\jobagapi.StaticWebAssets.Manifest.cache
+D:\git\uwu\jobag_backend\obj\Debug\net5.0\staticwebassets\jobagapi.StaticWebAssets.xml
+D:\git\uwu\jobag_backend\obj\Debug\net5.0\scopedcss\bundle\jobagapi.styles.css
+D:\git\uwu\jobag_backend\obj\Debug\net5.0\jobagapi.RazorTargetAssemblyInfo.cache
+D:\git\uwu\jobag_backend\obj\Debug\net5.0\jobagapi.csproj.CopyComplete
+D:\git\uwu\jobag_backend\obj\Debug\net5.0\jobagapi.dll
+D:\git\uwu\jobag_backend\obj\Debug\net5.0\ref\jobagapi.dll
+D:\git\uwu\jobag_backend\obj\Debug\net5.0\jobagapi.pdb
+D:\git\uwu\jobag_backend\obj\Debug\net5.0\jobagapi.genruntimeconfig.cache
