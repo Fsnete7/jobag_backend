@@ -8,9 +8,6 @@ namespace jobagapi.Mapping
 {
     public class ModelToResourceProfile : Profile
     {
-        public ModelToResourceProfile()
-        {
-            CreateMap<JobOffer, jobOfferResource>();
-        }
+        //delete file
     }
 }

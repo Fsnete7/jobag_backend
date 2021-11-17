@@ -9,10 +9,6 @@ namespace jobagapi.Mapping
 {
     public class ResourceToModelProfile : Profile
     {
-        public ResourceToModelProfile()
-        {
-            CreateMap<SaveJobOfferResource, JobOffer>();
-            CreateMap<SaveMailMessageResource, MailMessage>();
-        }
+        //delete file
     }
 }

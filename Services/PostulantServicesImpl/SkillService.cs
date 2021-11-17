@@ -34,7 +34,7 @@ namespace jobagapi.Services.PostulantServicesImpl
             try
             {
                 await _skillRepository.AddAsync(skill);
-                await _unitOfWork.CompleteAsync();
+                await _unitOfWork.CompletedAsync();
                 return new SkillResponse(skill);
             }
             catch (Exception ex)
@@ -59,7 +59,7 @@ namespace jobagapi.Services.PostulantServicesImpl
             try
             {
                 _skillRepository.Remove(existingSkill);
-                await _unitOfWork.CompleteAsync();
+                await _unitOfWork.CompletedAsync();
 
                 return new SkillResponse(existingSkill);
             }

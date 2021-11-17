@@ -1,4 +1,6 @@
-﻿namespace jobagapi.Domain.Services.Communication
+﻿using jobagapi.Domain.Models.SubscriptionSystem;
+
+namespace jobagapi.Domain.Services.Communication
 {
     public abstract class BaseResponse<T>
     {
@@ -8,14 +10,15 @@
 
         public BaseResponse(T resource)
         {
-            Resource = resource;
             Success = true;
             Message = string.Empty;
+            Resource = resource;
         }
         public BaseResponse(string message)
         {
             Success = false;
             Message = message;
         }
+        
     }
 }

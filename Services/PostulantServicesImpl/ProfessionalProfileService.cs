@@ -34,7 +34,7 @@ namespace jobagapi.Services.PostulantServicesImpl
             try
             {
                 await _professionalRepository.AddAsync(professionalProfile);
-                await _unitOfWork.CompleteAsync();
+                await _unitOfWork.CompletedAsync();
                 return new ProfessionalProfileResponse(professionalProfile);
             }
             catch (Exception ex)
@@ -59,7 +59,7 @@ namespace jobagapi.Services.PostulantServicesImpl
             try
             {
                 _professionalRepository.Remove(existingProfile);
-                await _unitOfWork.CompleteAsync();
+                await _unitOfWork.CompletedAsync();
 
                 return new ProfessionalProfileResponse(existingProfile);
             }

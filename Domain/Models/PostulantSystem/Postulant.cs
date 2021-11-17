@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using jobagapi.Domain.Models.SuscriptionSystem;
+﻿using System.Collections.Generic;
+using jobagapi.Domain.Models.SubscriptionSystem;
 
 namespace jobagapi.Domain.Models.PostulantSystem
 {
@@ -10,5 +7,6 @@ namespace jobagapi.Domain.Models.PostulantSystem
     {
         public string CivilStatus { get; set; }
         
-      }
+
+    }
 }

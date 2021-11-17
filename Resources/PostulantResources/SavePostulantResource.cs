@@ -1,5 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using jobagapi.Resources.SuscriptionResources;
+using jobagapi.Resources.SubscriptionResources;
 
 namespace jobagapi.Resources.PostulantResources
 {

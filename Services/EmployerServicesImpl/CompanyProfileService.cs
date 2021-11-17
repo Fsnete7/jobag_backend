@@ -31,7 +31,7 @@ namespace jobagapi.Services.EmployerServicesImpl
             try
             {
                 await _companyProfileRepository.AddAsync(companyProfile);
-                await _unitOfWork.CompleteAsync();
+                await _unitOfWork.CompletedAsync();
 
                 return new CompanyProfileResponse(companyProfile);
             }
@@ -52,7 +52,7 @@ namespace jobagapi.Services.EmployerServicesImpl
             try
             {
                 _companyProfileRepository.Update(existingCompanyProfile);
-                await _unitOfWork.CompleteAsync();
+                await _unitOfWork.CompletedAsync();
 
                 return new CompanyProfileResponse(existingCompanyProfile);
             }
@@ -72,7 +72,7 @@ namespace jobagapi.Services.EmployerServicesImpl
             try
             {
                 _companyProfileRepository.Delete(existingCompanyProfile);
-                await _unitOfWork.CompleteAsync();
+                await _unitOfWork.CompletedAsync();
 
                 return new CompanyProfileResponse(existingCompanyProfile);
             }
