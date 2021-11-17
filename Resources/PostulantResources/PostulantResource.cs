@@ -1,4 +1,4 @@
-﻿using jobagapi.Resources.SuscriptionResources;
+﻿using jobagapi.Resources.SubscriptionResources;
 
 namespace jobagapi.Resources.PostulantResources
 {

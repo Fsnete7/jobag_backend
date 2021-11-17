@@ -34,7 +34,7 @@ namespace jobagapi.Services.PostulantServicesImpl
             try
             {
                 await _postulantRepository.AddAsync(postulant);
-                await _unitOfWork.CompleteAsync();
+                await _unitOfWork.CompletedAsync();
                 return new PostulantResponse(postulant);
             }
             catch (Exception ex)
@@ -58,7 +58,7 @@ namespace jobagapi.Services.PostulantServicesImpl
             try
             {
                 _postulantRepository.Remove(existingPerformer);
-                await _unitOfWork.CompleteAsync();
+                await _unitOfWork.CompletedAsync();
 
                 return new PostulantResponse(existingPerformer);
             }

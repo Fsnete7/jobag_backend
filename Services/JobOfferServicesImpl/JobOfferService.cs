@@ -31,13 +31,13 @@ namespace jobagapi.Services.JobOfferServicesImpl
             try
             {
                 await _jobOfferRepository.AddAsync(jobOffer);
-                await _unitOfWork.CompleteAsync();
+                await _unitOfWork.CompletedAsync();
 
                 return new JobOfferResponse(jobOffer);
             }
             catch (Exception e)
             {
-                return new JobOfferResponse($"An error ocurred while saving the job offer: {e.Message}");
+                return new JobOfferResponse($"An error occurred while saving the job offer: {e.Message}");
             }
         }
 
@@ -52,13 +52,13 @@ namespace jobagapi.Services.JobOfferServicesImpl
             try
             {
                 _jobOfferRepository.update(existingJobOffer);
-                await _unitOfWork.CompleteAsync();
+                await _unitOfWork.CompletedAsync();
 
                 return new JobOfferResponse(existingJobOffer);
             }
             catch (Exception e)
             {
-                return new JobOfferResponse($"An error ocurred while saving the job offer: {e.Message}");
+                return new JobOfferResponse($"An error occurred while saving the job offer: {e.Message}");
             }
         }
 
@@ -72,13 +72,13 @@ namespace jobagapi.Services.JobOfferServicesImpl
             try
             {
                 _jobOfferRepository.Delete(existingJobOffer);
-                await _unitOfWork.CompleteAsync();
+                await _unitOfWork.CompletedAsync();
 
                 return new JobOfferResponse(existingJobOffer);
             }
             catch (Exception e)
             {
-                return new JobOfferResponse($"An error ocurred while deleting the job offer: {e.Message}");
+                return new JobOfferResponse($"An error occurred while deleting the job offer: {e.Message}");
 
             }
         }

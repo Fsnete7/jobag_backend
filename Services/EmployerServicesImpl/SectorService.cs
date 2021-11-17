@@ -30,7 +30,7 @@ namespace jobagapi.Services.EmployerServicesImpl
             try
             {
                 await _sectorRepository.AddAsync(sector);
-                await _unitOfWork.CompleteAsync();
+                await _unitOfWork.CompletedAsync();
 
                 return new SectorResponse(sector);
             }
@@ -51,7 +51,7 @@ namespace jobagapi.Services.EmployerServicesImpl
             try
             {
                 _sectorRepository.Delete(existingSector);
-                await _unitOfWork.CompleteAsync();
+                await _unitOfWork.CompletedAsync();
 
                 return new SectorResponse(existingSector);
             }

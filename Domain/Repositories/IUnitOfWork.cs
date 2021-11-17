@@ -4,6 +4,6 @@ namespace jobagapi.Domain.Repositories
 {
     public interface IUnitOfWork
     {
-        Task CompleteAsync();
+        Task CompletedAsync();
     }
 }

@@ -34,7 +34,7 @@ namespace jobagapi.Services.PostulantServicesImpl
             try
             {
                 await _languageRepository.AddAsync(language);
-                await _unitOfWork.CompleteAsync();
+                await _unitOfWork.CompletedAsync();
                 return new LanguageResponse(language);
             }
             catch (Exception ex)
@@ -58,7 +58,7 @@ namespace jobagapi.Services.PostulantServicesImpl
             try
             {
                 _languageRepository.Remove(existingLanguage);
-                await _unitOfWork.CompleteAsync();
+                await _unitOfWork.CompletedAsync();
 
                 return new LanguageResponse(existingLanguage);
             }

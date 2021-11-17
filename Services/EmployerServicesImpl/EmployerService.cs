@@ -1,15 +1,11 @@
-﻿
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using jobagapi.Domain.Models.EmployerSystem;
-using jobagapi.Domain.Models.JobOfferSystem;
 using jobagapi.Domain.Repositories;
 using jobagapi.Domain.Repositories.EmployerRepositories;
 using jobagapi.Domain.Services.Communication.EmployerResponse;
 using jobagapi.Domain.Services.EmployerServices;
-using jobagapi.Persistence.Repositories.EmployerPersistence;
 
 namespace jobagapi.Services.EmployerServicesImpl
 {
@@ -34,7 +30,7 @@ namespace jobagapi.Services.EmployerServicesImpl
             try
             {
                 await _employerRepository.AddAsync(employer);
-                await _unitOfWork.CompleteAsync();
+                await _unitOfWork.CompletedAsync();
 
                 return new EmployerResponse(employer);
             }
@@ -50,12 +46,14 @@ namespace jobagapi.Services.EmployerServicesImpl
 
             if (existingEmployer == null)
                 return new EmployerResponse("Job Offer not found.");
-//POR MODIFICAR
-            existingEmployer.Id = employer.Id;
+            
+            //POR MODIFICAR
+            
+            //existingEmployer.Id = employer.Id;
             try
             {
                 _employerRepository.Update(existingEmployer);
-                await _unitOfWork.CompleteAsync();
+                await _unitOfWork.CompletedAsync();
 
                 return new EmployerResponse(existingEmployer);
             }
@@ -75,7 +73,7 @@ namespace jobagapi.Services.EmployerServicesImpl
             try
             {
                 _employerRepository.Delete(existingEmployer);
-                await _unitOfWork.CompleteAsync();
+                await _unitOfWork.CompletedAsync();
 
                 return new EmployerResponse(existingEmployer);
             }

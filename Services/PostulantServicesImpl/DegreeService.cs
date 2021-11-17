@@ -34,7 +34,7 @@ namespace jobagapi.Services.PostulantServicesImpl
             try
             {
                 await _degreeRepository.AddAsync(degree);
-                await _unitOfWork.CompleteAsync();
+                await _unitOfWork.CompletedAsync();
                 return new DegreeResponse(degree);
             }
             catch (Exception ex)
@@ -58,7 +58,7 @@ namespace jobagapi.Services.PostulantServicesImpl
             try
             {
                 _degreeRepository.Remove(existingDegree);
-                await _unitOfWork.CompleteAsync();
+                await _unitOfWork.CompletedAsync();
 
                 return new DegreeResponse(existingDegree);
             }

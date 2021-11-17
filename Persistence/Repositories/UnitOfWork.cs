@@ -13,7 +13,7 @@ namespace jobagapi.Persistence.Repositories
             _context = context;
         }
 
-        public async Task CompleteAsync()
+        public async Task CompletedAsync()
         {
             await _context.SaveChangesAsync();
         }

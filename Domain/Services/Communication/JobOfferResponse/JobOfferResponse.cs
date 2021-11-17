@@ -1,9 +1,16 @@
-﻿namespace jobagapi.Domain.Services.Communication.JobOfferResponse
-{
-    public class JobOfferResponse : BaseResponse<Models.JobOfferSystem.JobOffer>
-    {
-        public JobOfferResponse(string message) : base(message) { }
+﻿using jobagapi.Domain.Models.JobOfferSystem;
 
-        public JobOfferResponse(Models.JobOfferSystem.JobOffer jobOffer) : base(jobOffer) { }
+namespace jobagapi.Domain.Services.Communication.JobOfferResponse
+{
+    public class JobOfferResponse : BaseResponse<JobOffer>
+    {
+        public JobOfferResponse(JobOffer resource) : base(resource)
+        {
+        }
+
+        public JobOfferResponse(string message) : base(message)
+        {
+        }
+        
     }
 }

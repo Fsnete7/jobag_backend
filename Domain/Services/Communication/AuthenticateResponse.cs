@@ -1,4 +1,4 @@
-﻿using jobagapi.Domain.Models.SuscriptionSystem;
+﻿using jobagapi.Domain.Models.SubscriptionSystem;
 
 namespace jobagapi.Domain.Services.Communication
 {
@@ -10,7 +10,7 @@ namespace jobagapi.Domain.Services.Communication
 
         public AuthenticateResponse(User user, string token)
         {
-            Id = user.Id;
+            Id = user.UserId;
             Email = user.Email;
             Token = token;
         }

@@ -45,7 +45,7 @@ namespace jobagapi.Controllers.EmployerControllers
             return Ok(companyProfileResource);
         }
         
-        [HttpPut("{id}")]
+        [HttpPut("{id:int}")]
         public async Task<IActionResult> PutAsync(int id, [FromBody] SaveCompanyProfileResource resource)
         {
             if (!ModelState.IsValid)
@@ -61,7 +61,7 @@ namespace jobagapi.Controllers.EmployerControllers
             return Ok(companyProfileResource);
         } 
         
-        [HttpDelete("{id}")]
+        [HttpDelete("{id:int}")]
         
         public async Task<IActionResult> DeleteAsync(int id)
         {

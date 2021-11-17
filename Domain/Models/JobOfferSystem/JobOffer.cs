@@ -4,7 +4,7 @@ namespace jobagapi.Domain.Models.JobOfferSystem
 {
     public class JobOffer
     {
-        public int Id { get; set; }
+        public int JobOfferId { get; set; }
         public string Name { get; set; }
         public string Type { get; set; }
         public double Salary { get; set; }
