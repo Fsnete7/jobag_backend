@@ -40,11 +40,7 @@ namespace jobagapi.Persistence.Contexts
         public DbSet<ProfileLanguage> ProfileLanguages { get; set; }
         public DbSet<ProfileSkill> ProfileSkills { get; set; }
         
-        
-        public AppDbContext(DbContextOptions options) : base(options)
-        {
-           
-        }
+        public AppDbContext(DbContextOptions options) : base(options) { }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
@@ -158,25 +154,6 @@ namespace jobagapi.Persistence.Contexts
                     Salary = 3200, Workplace = "Spotify", Type = "Develop", Experience = "None"
                 }
             );
-            
-            /*//--------------- Mail Messages ---------------
-            // Constrains
-            builder.Entity<MailMessage>().ToTable("Messages");
-            builder.Entity<MailMessage>().HasKey(p => p.);
-            builder.Entity<MailMessage>().Property(p => p.Id).IsRequired().ValueGeneratedOnAdd();
-            builder.Entity<MailMessage>().Property(p => p.Message).IsRequired();
-            
-            // Relationships
-            
-            
-            // Seed Data
-            builder.Entity<MailMessage>().HasData(
-                new MailMessage
-                    { Id = 1, Message = "Hola, que te parece jobag?" }
-            );*/
-            
-            //---------------- Subscription Bounded Content -------
-            
             //---------------- User -------
             // Constrains
             builder.Entity<User>().ToTable("Users");
@@ -188,7 +165,7 @@ namespace jobagapi.Persistence.Contexts
             builder.Entity<User>().Property(p => p.PhoneNumber).IsRequired();
             builder.Entity<User>().Property(p => p.PassWord).IsRequired().HasMaxLength(30);
             // Relationships
-                //go to postulant, employeer or Payment
+                //go to Payment
             // Seed Data
             builder.Entity<User>().HasData
             (
@@ -260,7 +237,7 @@ namespace jobagapi.Persistence.Contexts
             builder.Entity<SubscriptionPlan>().Property(p => p.LimitModification).IsRequired();
             builder.Entity<SubscriptionPlan>().Property(p => p.Assistance).IsRequired();
             // Relationships
-                // :C
+                // Go to payment
             // Seed Data
             builder.Entity<SubscriptionPlan>().HasData
             (
@@ -287,7 +264,6 @@ namespace jobagapi.Persistence.Contexts
                     Assistance = false,
                 }
             );
-            
             
             builder.UseSnakeCaseNamingConvention();
         }
