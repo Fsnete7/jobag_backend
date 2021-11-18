@@ -2,12 +2,13 @@
 using System.Threading.Tasks;
 using jobagapi.Domain.Models.JobOfferSystem;
 using jobagapi.Domain.Repositories;
+using jobagapi.Domain.Repositories.PostulantRepositories;
 using jobagapi.Persistence.Contexts;
 using Microsoft.EntityFrameworkCore;
 
 namespace jobagapi.Persistence.Repositories.JobOfferRepositories
 {
-    public class PostulationRepository : BaseRepository, IPostulationRepository
+    public class PostulationRepository : BaseRepository, IPostulationRepository 
     {
         public PostulationRepository(AppDbContext context) : base(context)
         {

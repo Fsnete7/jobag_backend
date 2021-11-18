@@ -1,4 +1,6 @@
-﻿namespace jobagapi.Domain.Models.PostulantSystem
+﻿using System.Collections.Generic;
+
+namespace jobagapi.Domain.Models.PostulantSystem
 {
     public class Skill
     {
@@ -6,5 +8,7 @@
         public string Name { get; set; }
 
         public string Description { get; set; }
+        
+        public List<ProfileSkill> ProfileSkills { get; set; }  
     }
 }

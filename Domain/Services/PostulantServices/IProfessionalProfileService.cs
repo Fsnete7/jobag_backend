@@ -11,5 +11,7 @@ namespace jobagapi.Domain.Services.PostulantServices
         Task<ProfessionalProfileResponse> SaveAsync(ProfessionalProfile professionalProfile);
         Task<IEnumerable<ProfessionalProfile>> ListAsync();
         Task<ProfessionalProfileResponse> DeleteAsync(int id);
+        
+        Task<ProfessionalProfileResponse> UpdateAsync(int id,  ProfessionalProfile profile);
     }
 }

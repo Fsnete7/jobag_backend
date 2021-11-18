@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using jobagapi.Domain.Models.PostulantSystem;
 using jobagapi.Domain.Repositories;
 using jobagapi.Domain.Repositories.PostulantRepositories;
+using jobagapi.Domain.Services;
 using jobagapi.Domain.Services.Communication.PostulantResponse;
 using jobagapi.Domain.Services.PostulantServices;
 
@@ -65,6 +66,27 @@ namespace jobagapi.Services.PostulantServicesImpl
             catch (Exception ex)
             {
                 return new PostulantResponse($"An error has ocurred while deleting postulant: {ex.Message}");
+            }
+        }
+        
+        public async Task<PostulantResponse> UpdateAsync(int id, Postulant postulant)
+        {
+            var existingPostulant = await _postulantRepository.FindById(id);
+
+            if (existingPostulant == null)
+                return new PostulantResponse("Postulant not found.");
+
+            existingPostulant.FirstName = postulant.FirstName;
+            try
+            {
+                _postulantRepository.Update(existingPostulant);
+                await _unitOfWork.CompletedAsync();
+
+                return new PostulantResponse(existingPostulant);
+            }
+            catch (Exception e)
+            {
+                return new PostulantResponse($"An error ocurred while saving the postulant: {e.Message}");
             }
         }
     }

@@ -7,9 +7,11 @@ namespace jobagapi.Domain.Services.PostulantServices
 {
     public interface IDegreeService
     {
-        Task<DegreeResponse> GetByIdAsync(int id);
+        Task<IEnumerable<Degree>> ListByProfileIdAsync(int profileId);
         Task<DegreeResponse> SaveAsync(Degree degree);
         Task<IEnumerable<Degree>> ListAsync();
         Task<DegreeResponse> DeleteAsync(int id);
+        
+        Task<DegreeResponse> UpdateAsync(int id, Degree degree);
     }
 }
