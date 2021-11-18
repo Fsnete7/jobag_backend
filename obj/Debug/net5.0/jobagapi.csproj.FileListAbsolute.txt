@@ -160,3 +160,44 @@ C:\Users\Windows 10\Documents\GitHub\jobag_backend\obj\Debug\net5.0\jobagapi.dll
 C:\Users\Windows 10\Documents\GitHub\jobag_backend\obj\Debug\net5.0\ref\jobagapi.dll
 C:\Users\Windows 10\Documents\GitHub\jobag_backend\obj\Debug\net5.0\jobagapi.pdb
 C:\Users\Windows 10\Documents\GitHub\jobag_backend\obj\Debug\net5.0\jobagapi.genruntimeconfig.cache
+C:\Users\eliza\RiderProjects\jobag_backend111\obj\Debug\net5.0\jobagapi.csproj.AssemblyReference.cache
+C:\Users\eliza\RiderProjects\jobag_backend111\obj\Debug\net5.0\jobagapi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\eliza\RiderProjects\jobag_backend111\obj\Debug\net5.0\jobagapi.AssemblyInfoInputs.cache
+C:\Users\eliza\RiderProjects\jobag_backend111\obj\Debug\net5.0\jobagapi.AssemblyInfo.cs
+C:\Users\eliza\RiderProjects\jobag_backend111\obj\Debug\net5.0\jobagapi.csproj.CoreCompileInputs.cache
+C:\Users\eliza\RiderProjects\jobag_backend111\obj\Debug\net5.0\jobagapi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\eliza\RiderProjects\jobag_backend111\obj\Debug\net5.0\jobagapi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\eliza\RiderProjects\jobag_backend111\obj\Debug\net5.0\jobagapi.dll
+C:\Users\eliza\RiderProjects\jobag_backend111\obj\Debug\net5.0\ref\jobagapi.dll
+C:\Users\eliza\RiderProjects\jobag_backend111\obj\Debug\net5.0\jobagapi.pdb
+C:\Users\eliza\RiderProjects\jobag_backend111\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\eliza\RiderProjects\jobag_backend111\bin\Debug\net5.0\appsettings.json
+C:\Users\eliza\RiderProjects\jobag_backend111\bin\Debug\net5.0\global.json
+C:\Users\eliza\RiderProjects\jobag_backend111\bin\Debug\net5.0\jobagapi.exe
+C:\Users\eliza\RiderProjects\jobag_backend111\bin\Debug\net5.0\jobagapi.deps.json
+C:\Users\eliza\RiderProjects\jobag_backend111\bin\Debug\net5.0\jobagapi.runtimeconfig.json
+C:\Users\eliza\RiderProjects\jobag_backend111\bin\Debug\net5.0\jobagapi.runtimeconfig.dev.json
+C:\Users\eliza\RiderProjects\jobag_backend111\bin\Debug\net5.0\jobagapi.dll
+C:\Users\eliza\RiderProjects\jobag_backend111\bin\Debug\net5.0\ref\jobagapi.dll
+C:\Users\eliza\RiderProjects\jobag_backend111\bin\Debug\net5.0\jobagapi.pdb
+C:\Users\eliza\RiderProjects\jobag_backend111\bin\Debug\net5.0\AutoMapper.dll
+C:\Users\eliza\RiderProjects\jobag_backend111\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\eliza\RiderProjects\jobag_backend111\bin\Debug\net5.0\Humanizer.dll
+C:\Users\eliza\RiderProjects\jobag_backend111\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\eliza\RiderProjects\jobag_backend111\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\eliza\RiderProjects\jobag_backend111\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\eliza\RiderProjects\jobag_backend111\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Users\eliza\RiderProjects\jobag_backend111\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\eliza\RiderProjects\jobag_backend111\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.Design.dll
+C:\Users\eliza\RiderProjects\jobag_backend111\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\eliza\RiderProjects\jobag_backend111\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Users\eliza\RiderProjects\jobag_backend111\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\eliza\RiderProjects\jobag_backend111\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\eliza\RiderProjects\jobag_backend111\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\eliza\RiderProjects\jobag_backend111\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\eliza\RiderProjects\jobag_backend111\obj\Debug\net5.0\staticwebassets\jobagapi.StaticWebAssets.Manifest.cache
+C:\Users\eliza\RiderProjects\jobag_backend111\obj\Debug\net5.0\staticwebassets\jobagapi.StaticWebAssets.xml
+C:\Users\eliza\RiderProjects\jobag_backend111\obj\Debug\net5.0\scopedcss\bundle\jobagapi.styles.css
+C:\Users\eliza\RiderProjects\jobag_backend111\obj\Debug\net5.0\jobagapi.RazorTargetAssemblyInfo.cache
+C:\Users\eliza\RiderProjects\jobag_backend111\obj\Debug\net5.0\jobagapi.csproj.CopyComplete
+C:\Users\eliza\RiderProjects\jobag_backend111\obj\Debug\net5.0\jobagapi.genruntimeconfig.cache

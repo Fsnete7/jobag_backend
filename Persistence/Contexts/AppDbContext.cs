@@ -264,6 +264,38 @@ namespace jobagapi.Persistence.Contexts
                     Assistance = false,
                 }
             );
+            //--------sector-----
+            builder.Entity<Sector>().ToTable("Sectors");
+            builder.Entity<Sector>().HasKey(p => p.Id);
+            builder.Entity<Sector>().Property(p => p.Id).IsRequired().ValueGeneratedOnAdd();
+            builder.Entity<Sector>().Property(p => p.Name).IsRequired().HasMaxLength(30);
+            builder.Entity<Sector>().Property(p => p.Description).IsRequired().HasMaxLength(230);
+            // Seed Data
+            builder.Entity<Sector>().HasData
+            (
+                new Sector
+                {
+                    Id = 101,
+                    Name = "Sector",
+                    Description = "This is a sector"
+                }
+            );
+            
+            //------company profile----------
+            builder.Entity<CompanyProfile>().ToTable("CompanyProfiles");
+            builder.Entity<CompanyProfile>().HasKey(p => p.Id);
+            builder.Entity<CompanyProfile>().Property(p => p.Id).IsRequired().ValueGeneratedOnAdd();
+            builder.Entity<CompanyProfile>().Property(p => p.Country).IsRequired().HasMaxLength(30);
+            builder.Entity<CompanyProfile>().Property(p => p.City).IsRequired().HasMaxLength(50);
+            builder.Entity<CompanyProfile>().Property(p => p.Direction).IsRequired().HasMaxLength(230);
+            builder.Entity<CompanyProfile>().Property(p => p.District).IsRequired().HasMaxLength(50);
+            // Relationships
+            builder.Entity<CompanyProfile>()
+                .HasOne(a => a.Employer)
+                .WithOne(u => u.CompanyProfile)
+                .HasForeignKey<CompanyProfile>(a => a.EmployerId)
+                .OnDelete(DeleteBehavior.Cascade);
+
             
             builder.UseSnakeCaseNamingConvention();
         }

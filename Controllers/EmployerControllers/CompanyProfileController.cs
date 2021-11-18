@@ -41,7 +41,7 @@ namespace jobagapi.Controllers.EmployerControllers
 
             if (!result.Success)
                 return BadRequest(result.Message);
-            var companyProfileResource = _mapper.Map<CompanyProfile, SaveCompanyProfileResource>(result.Resource);
+            var companyProfileResource = _mapper.Map<CompanyProfile, CompanyProfileResource>(result.Resource);
             return Ok(companyProfileResource);
         }
         
@@ -57,7 +57,7 @@ namespace jobagapi.Controllers.EmployerControllers
             if (!result.Success)
                 return BadRequest(result.Message);
 
-            var companyProfileResource = _mapper.Map<CompanyProfile, SaveCompanyProfileResource>(result.Resource);
+            var companyProfileResource = _mapper.Map<CompanyProfile, CompanyProfileResource>(result.Resource);
             return Ok(companyProfileResource);
         } 
         
@@ -65,12 +65,12 @@ namespace jobagapi.Controllers.EmployerControllers
         
         public async Task<IActionResult> DeleteAsync(int id)
         {
-            var result = await _companyProfileService.DeletAsync(id);
+            var result = await _companyProfileService.DeleteAsync(id);
                
             if (!result.Success)
                 return BadRequest(result.Message);
 
-            var companyProfileResource = _mapper.Map<CompanyProfile, SaveCompanyProfileResource>(result.Resource);
+            var companyProfileResource = _mapper.Map<CompanyProfile, CompanyProfileResource>(result.Resource);
             return Ok(companyProfileResource);
         }
     }

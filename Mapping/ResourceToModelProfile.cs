@@ -25,12 +25,17 @@ namespace jobagapi.Mapping
             CreateMap<SaveLanguageResource, Language>();
             CreateMap<SaveSkillResource, Skill>();
             CreateMap<SaveProfessionalProfileResource, ProfessionalProfile>();
-            CreateMap<SaveEmployerResource, Employer>();
+            
             
             //--------------- Scoped Subscription Bounded Context ---------------
             CreateMap<SavePaymentResource, Payment>();
             CreateMap<SaveSubscriptionPlanResource, SubscriptionPlan>();
             CreateMap<SaveUserResource, User>();
+            
+            //--------------- Scoped Employer Bounded Context ---------------
+            CreateMap<SaveEmployerResource, Employer>();
+            CreateMap<SaveSectorResource, Sector>();
+            CreateMap<SaveCompanyProfileResource, CompanyProfile>();
         }
     }
 }

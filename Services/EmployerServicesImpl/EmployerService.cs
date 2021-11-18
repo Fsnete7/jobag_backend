@@ -25,50 +25,49 @@ namespace jobagapi.Services.EmployerServicesImpl
             return await _employerRepository.ListAsync();
         }
         
-        public async Task<EmployerResponse> SaveAsync(Employer employer)
+        public async Task<SaveEmployerResponse> SaveAsync(Employer employer)
         {
             try
             {
                 await _employerRepository.AddAsync(employer);
                 await _unitOfWork.CompletedAsync();
 
-                return new EmployerResponse(employer);
+                return new SaveEmployerResponse(employer);
             }
             catch (Exception e)
             {
-                return new EmployerResponse($"An error ocurred while saving the job offer: {e.Message}");
+                return new SaveEmployerResponse($"An error ocurred while saving the employer: {e.Message}");
             }
         }
 
-        public async Task<EmployerResponse> UpdateAsync(int id, Employer employer)
+        public async Task<SaveEmployerResponse> UpdateAsync(int id, Employer employer)
         {
             var existingEmployer = await _employerRepository.FindByIdAsync(id);
 
             if (existingEmployer == null)
-                return new EmployerResponse("Job Offer not found.");
+                return new SaveEmployerResponse("employer not found.");
+            //
+            existingEmployer.Position = employer.Position;
             
-            //POR MODIFICAR
-            
-            //existingEmployer.Id = employer.Id;
             try
             {
                 _employerRepository.Update(existingEmployer);
                 await _unitOfWork.CompletedAsync();
 
-                return new EmployerResponse(existingEmployer);
+                return new SaveEmployerResponse(existingEmployer);
             }
             catch (Exception e)
             {
-                return new EmployerResponse($"An error ocurred while saving the job offer: {e.Message}");
+                return new SaveEmployerResponse($"An error ocurred while saving the employer: {e.Message}");
             }
         }
 
-        public async Task<EmployerResponse> DeletAsync(int id)
+        public async Task<EmployerResponse> DeleteAsync(int id)
         {
             var existingEmployer = await _employerRepository.FindByIdAsync(id);
             
             if(existingEmployer == null)
-                return new EmployerResponse("Job Offer not found.");
+                return new EmployerResponse("employer not found.");
 
             try
             {
@@ -79,7 +78,7 @@ namespace jobagapi.Services.EmployerServicesImpl
             }
             catch (Exception e)
             {
-                return new EmployerResponse($"An error ocurred while deleting the job offer: {e.Message}");
+                return new EmployerResponse($"An error ocurred while deleting the employer: {e.Message}");
 
             }
         }
