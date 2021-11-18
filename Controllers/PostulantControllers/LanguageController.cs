@@ -70,7 +70,7 @@ namespace jobagapi.Controllers.PostulantControllers
             if (!result.Success)
                 return BadRequest(result.Message);
 
-            var languageResource = _mapper.Map<Language, SaveLanguageResource>(result.Resource);
+            var languageResource = _mapper.Map<Language, LanguageResource>(result.Resource);
             return Ok(languageResource);
         }
     }

@@ -44,7 +44,7 @@ namespace jobagapi.Controllers.PostulantControllers
             if (!result.Success)
                 return BadRequest(result.Message);
 
-            var profileResource = _mapper.Map<ProfessionalProfile, SaveProfessionalProfileResource>(result.Resource);
+            var profileResource = _mapper.Map<ProfessionalProfile, ProfessionalProfileResource>(result.Resource);
             return Ok(profileResource);
         }
 
@@ -60,7 +60,7 @@ namespace jobagapi.Controllers.PostulantControllers
             if (!result.Success)
                 return BadRequest(result.Message);
 
-            var profileResource = _mapper.Map<ProfessionalProfile, SaveProfessionalProfileResource>(result.Resource);
+            var profileResource = _mapper.Map<ProfessionalProfile, ProfessionalProfileResource>(result.Resource);
             return Ok(profileResource);
         }
 
@@ -72,7 +72,7 @@ namespace jobagapi.Controllers.PostulantControllers
             if (!result.Success)
                 return BadRequest(result.Message);
             
-            var profileResource = _mapper.Map<ProfessionalProfile, SaveProfessionalProfileResource>(result.Resource);
+            var profileResource = _mapper.Map<ProfessionalProfile, ProfessionalProfileResource>(result.Resource);
             return Ok(profileResource);
         }
     }
