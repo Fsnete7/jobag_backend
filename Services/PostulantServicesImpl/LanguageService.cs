@@ -85,7 +85,9 @@ namespace jobagapi.Services.PostulantServicesImpl
             if (existingLanguage == null)
                 return new LanguageResponse("Language not found.");
 
- 
+            existingLanguage.Level = language.Level;
+            existingLanguage.Name = language.Name;
+            
             try
             {
                 _languageRepository.Update(existingLanguage);

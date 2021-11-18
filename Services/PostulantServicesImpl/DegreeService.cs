@@ -85,8 +85,10 @@ namespace jobagapi.Services.PostulantServicesImpl
 
             if (existingDegree == null)
                 return new DegreeResponse("Degree not found.");
+            
+            existingDegree.Name = existingDegree.Name;
+            existingDegree.Url = existingDegree.Url;
 
- 
             try
             {
                 _degreeRepository.Update(existingDegree);

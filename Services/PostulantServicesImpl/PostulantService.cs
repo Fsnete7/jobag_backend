@@ -77,6 +77,12 @@ namespace jobagapi.Services.PostulantServicesImpl
                 return new PostulantResponse("Postulant not found.");
 
             existingPostulant.FirstName = postulant.FirstName;
+            existingPostulant.LastName = postulant.LastName;
+            existingPostulant.Email = postulant.Email;
+            existingPostulant.PassWord = postulant.PassWord;
+            existingPostulant.CivilStatus = postulant.CivilStatus;
+            existingPostulant.PhoneNumber = postulant.PhoneNumber;
+                
             try
             {
                 _postulantRepository.Update(existingPostulant);

@@ -55,7 +55,7 @@ namespace jobagapi.Services.PostulantServicesImpl
 
             if (existingProfile == null)
                 return new ProfessionalProfileResponse("Profile not found");
-
+            
             try
             {
                 _professionalRepository.Remove(existingProfile);
@@ -76,7 +76,10 @@ namespace jobagapi.Services.PostulantServicesImpl
             if (existingProfile == null)
                 return new ProfessionalProfileResponse("Profile not found.");
 
- 
+            existingProfile.Ocupation = profile.Ocupation;
+            existingProfile.Description = profile.Description;
+            existingProfile.VideoUrl = profile.VideoUrl;
+            
             try
             {
                 _professionalRepository.Update(existingProfile);
