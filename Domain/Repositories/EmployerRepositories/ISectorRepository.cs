@@ -11,7 +11,7 @@ namespace jobagapi.Domain.Repositories.EmployerRepositories
         Task AddAsync(Sector sector);
         
         Task<Sector> FindByIdAsync(int id);
-
+        void Update(Sector jobOffer);
         void Delete(Sector sector);
         
         

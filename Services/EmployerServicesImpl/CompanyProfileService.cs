@@ -26,43 +26,48 @@ namespace jobagapi.Services.EmployerServicesImpl
             return await _companyProfileRepository.ListAsync();
         }
         
-        public async Task<CompanyProfileResponse> SaveAsync(CompanyProfile companyProfile)
+        public async Task<SaveCompanyProfileResponse> SaveAsync(CompanyProfile companyProfile)
         {
             try
             {
                 await _companyProfileRepository.AddAsync(companyProfile);
                 await _unitOfWork.CompletedAsync();
 
-                return new CompanyProfileResponse(companyProfile);
+                return new SaveCompanyProfileResponse(companyProfile);
             }
             catch (Exception e)
             {
-                return new CompanyProfileResponse($"An error ocurred while saving the company profile: {e.Message}");
+                return new SaveCompanyProfileResponse($"An error ocurred while saving the company profile: {e.Message}");
             }
         }
 
-        public async Task<CompanyProfileResponse> UpdateAsync(int id, CompanyProfile companyProfile)
+        public async Task<SaveCompanyProfileResponse> UpdateAsync(int id, CompanyProfile companyProfile)
         {
             var existingCompanyProfile = await _companyProfileRepository.FindByIdAsync(id);
 
             if (existingCompanyProfile == null)
-                return new CompanyProfileResponse("company profile not found.");
-//POR MODIFICAR
-            existingCompanyProfile.Id = companyProfile.Id;
+                return new SaveCompanyProfileResponse("company profile not found.");
+
+           
+            existingCompanyProfile.City= companyProfile.City;
+            existingCompanyProfile.Country= companyProfile.Country;
+            existingCompanyProfile.Direction= companyProfile.Direction;
+            existingCompanyProfile.District= companyProfile.District;
+            
             try
             {
                 _companyProfileRepository.Update(existingCompanyProfile);
                 await _unitOfWork.CompletedAsync();
 
-                return new CompanyProfileResponse(existingCompanyProfile);
+                return new SaveCompanyProfileResponse(existingCompanyProfile);
             }
             catch (Exception e)
             {
-                return new CompanyProfileResponse($"An error ocurred while saving the company profile: {e.Message}");
+                return new SaveCompanyProfileResponse($"An error ocurred while saving the company profile: {e.Message}");
             }
         }
 
-        public async Task<CompanyProfileResponse> DeletAsync(int id)
+        public async Task<CompanyProfileResponse> DeleteAsync(int id)
         {
             var existingCompanyProfile= await _companyProfileRepository.FindByIdAsync(id);
             

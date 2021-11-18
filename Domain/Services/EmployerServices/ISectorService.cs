@@ -9,9 +9,10 @@ namespace jobagapi.Domain.Services.EmployerServices
     {
         
         Task<IEnumerable<Sector>> ListAsync();
-        Task<SectorResponse> SaveAsync(Sector sector);
+        Task<SaveSectorResponse> SaveAsync(Sector sector);
 
-      
-        Task<SectorResponse> DeletAsync(int id);
+        Task<SaveSectorResponse> UpdateAsync(int id, Sector sector);
+
+        Task<SectorResponse> DeleteAsync(int id);
     }
 }

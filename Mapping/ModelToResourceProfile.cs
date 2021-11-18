@@ -3,6 +3,7 @@ using jobagapi.Domain.Models.EmployerSystem;
 using jobagapi.Domain.Models.JobOfferSystem;
 using jobagapi.Domain.Models.PostulantSystem;
 using jobagapi.Domain.Models.SubscriptionSystem;
+using jobagapi.Resources.EmployerResources;
 using jobagapi.Resources.JobOfferResources;
 using jobagapi.Resources.PostulantResources;
 using jobagapi.Resources.SubscriptionResources;
@@ -24,7 +25,10 @@ namespace jobagapi.Mapping
             CreateMap<Skill, SkillResource>();
             CreateMap<Degree, DegreeResource>();
 
+            //------------ Scoped Employer Bounded Context 
             CreateMap<Employer, EmployerResource>();
+            CreateMap<CompanyProfile, CompanyProfileResource>();
+            CreateMap<Sector, SectorResource>();
             
             //--------------- Scoped Subscription Bounded Context ---------------
             CreateMap<Payment, PaymentResource>();

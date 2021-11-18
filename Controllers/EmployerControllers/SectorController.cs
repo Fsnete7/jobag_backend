@@ -40,22 +40,37 @@ namespace jobagapi.Controllers.EmployerControllers
 
             if (!result.Success)
                 return BadRequest(result.Message);
-            var sectorResource = _mapper.Map<Sector, SaveSectorResource>(result.Resource);
+            var sectorResource = _mapper.Map<Sector, SectorResource>(result.Resource);
             return Ok(sectorResource);
         }
         
         
+        [HttpPut("{id:int}")]
+        public async Task<IActionResult> PutAsync(int id, [FromBody] SaveSectorResource resource)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState.GetErrorMessages());
+
+            var sector = _mapper.Map<SaveSectorResource, Sector>(resource);
+            var result = await _sectorService.UpdateAsync(id, sector);
+            
+            if (!result.Success)
+                return BadRequest(result.Message);
+
+            var sectorResource = _mapper.Map<Sector, SectorResource>(result.Resource);
+            return Ok(sectorResource);
+        } 
       
         
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteAsync(int id)
         {
-            var result = await _sectorService.DeletAsync(id);
+            var result = await _sectorService.DeleteAsync(id);
                
             if (!result.Success)
                 return BadRequest(result.Message);
 
-            var sectorResource = _mapper.Map<Sector, SaveSectorResource>(result.Resource);
+            var sectorResource = _mapper.Map<Sector, SectorResource>(result.Resource);
             return Ok(sectorResource);
         }
     }

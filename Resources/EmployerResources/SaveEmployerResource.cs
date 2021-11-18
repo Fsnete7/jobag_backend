@@ -1,12 +1,15 @@
 ﻿
 
 using System.ComponentModel.DataAnnotations;
+using jobagapi.Resources.SubscriptionResources;
 
 namespace jobagapi.Resources.EmployerResources
 {
-    public class SaveEmployerResource
+    public class SaveEmployerResource : SaveUserResource
     {
         [Required]
-        public int Position { get; set; }
+        public string Position { get; set; }
+        
+        
     }
 }

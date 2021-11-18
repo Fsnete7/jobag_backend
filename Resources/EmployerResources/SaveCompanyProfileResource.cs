@@ -20,5 +20,8 @@ namespace jobagapi.Resources.EmployerResources
         [MaxLength(30)]
         public string Country { get; set; }
         
+        [Required]
+        public int EmployerId { get; set; }
+        
     }
 }
