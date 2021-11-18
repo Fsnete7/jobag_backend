@@ -4,7 +4,7 @@ using jobagapi.Resources.SubscriptionResources;
 
 namespace jobagapi.Resources.PostulantResources
 {
-    public class SavePostulantResource: UserResource
+    public class SavePostulantResource: SaveUserResource
     {
         [Required]
         [MaxLength(30)]

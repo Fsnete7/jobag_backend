@@ -11,7 +11,6 @@ namespace jobagapi.Domain.Services.Communication
         public BaseResponse(T resource)
         {
             Success = true;
-            Message = string.Empty;
             Resource = resource;
         }
         public BaseResponse(string message)

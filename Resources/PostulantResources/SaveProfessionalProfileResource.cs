@@ -18,7 +18,6 @@ namespace jobagapi.Resources.PostulantResources
         public string Description { get; set; }
         
         [Required]
-        [MaxLength(30)]
-        public int postulantId { get; set; }
+        public int PostulantId { get; set; }
     }
 }
