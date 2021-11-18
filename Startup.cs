@@ -69,12 +69,14 @@ namespace jobagapi
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Jobag_API", Version = "v1" });
             });
             
+
             //--------------- Scoped Employer Bounded Context ---------------
             services.AddScoped<IEmployerRepository, EmployerRepository>();
             services.AddScoped<IEmployerService, EmployerService>();
             
             
             //--------------- Scoped Job Offer Bounded Context ---------------
+
             services.AddScoped<IJobOfferRepository, JobOfferRepository>();
             services.AddScoped<IJobOfferService, JobOfferService>();
             
@@ -95,26 +97,9 @@ namespace jobagapi
             
             services.AddScoped<IDegreeRepository, DegreeRepository>();
             services.AddScoped<IDegreeService,DegreeService>();
-            
-            services.AddScoped<ILanguageRepository, LanguageRepository>();
-            services.AddScoped<ILanguageService,LanguageService>();
-            
-            services.AddScoped<ISkillRepository, SkillRepository>();
-            services.AddScoped<ISkillService,SkillService>();
-            
-            services.AddScoped<IProfessionalRepository, ProfessionalProfileRepository>();
-            services.AddScoped<IProfessionalProfileService,ProfessionalProfileService>();
-            
-            services.AddScoped<IProfileDegreeRepository, ProfileDegreeRepository>();
-            services.AddScoped<IProfileDegreeService,ProfileDegreeService>();
-            
-            services.AddScoped<IProfileLanguageRepository, ProfileLanguageRepository>();
-            services.AddScoped<IProfileLanguageService,ProfileLanguageService>();
-            
-            services.AddScoped<IProfileSkillRepository, ProfileSkillRepository>();
-            services.AddScoped<IProfileSkillService,ProfileSkillService>();
-            
+
             services.AddScoped<IUnitOfWork, UnitOfWork>();
+           
             services.AddAutoMapper(typeof(Startup));
         }
 

@@ -20,7 +20,6 @@ namespace jobagapi.Mapping
         {
             //--------------- Scoped Postulant Bounded Context ---------------
             CreateMap<SaveJobOfferResource, JobOffer>();
-            CreateMap<SaveMailMessageResource, MailMessage>();
             CreateMap<SavePostulantResource, Postulant>();
             CreateMap<SaveDegreeResource, Degree>();
             CreateMap<SaveLanguageResource, Language>();

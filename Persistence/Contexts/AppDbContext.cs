@@ -154,7 +154,6 @@ namespace jobagapi.Persistence.Contexts
                     Salary = 3200, Workplace = "Spotify", Type = "Develop", Experience = "None"
                 }
             );
-
             //---------------- User -------
             // Constrains
             builder.Entity<User>().ToTable("Users");
