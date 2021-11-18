@@ -13,7 +13,7 @@ namespace jobagapi.Domain.Models.PostulantSystem
         
         public Postulant Postulant { get; set;}
         
-        public int postulantId { get; set; }
+        public int PostulantId { get; set; }
         
         public List<ProfileDegree> ProfileDegrees { get; set; }
         public List<ProfileSkill> ProfileSkills { get; set; }  

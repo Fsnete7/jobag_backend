@@ -88,7 +88,7 @@ namespace jobagapi.Persistence.Contexts
             builder.Entity<ProfessionalProfile>()
                 .HasOne(a => a.Postulant)
                 .WithOne(u => u.ProfessionalProfile)
-                .HasForeignKey<ProfessionalProfile>(a => a.postulantId)
+                .HasForeignKey<ProfessionalProfile>(a => a.PostulantId)
                 .OnDelete(DeleteBehavior.Cascade);
             
             //--------------- Profiles Degrees ---------------

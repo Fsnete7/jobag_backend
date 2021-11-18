@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Windows 10\\Desktop\\jobag_backend-main\\jobagapi.csproj": {}
+    "C:\\Users\\Windows 10\\Documents\\GitHub\\jobag_backend\\jobagapi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Windows 10\\Desktop\\jobag_backend-main\\jobagapi.csproj": {
+    "C:\\Users\\Windows 10\\Documents\\GitHub\\jobag_backend\\jobagapi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Windows 10\\Desktop\\jobag_backend-main\\jobagapi.csproj",
+        "projectUniqueName": "C:\\Users\\Windows 10\\Documents\\GitHub\\jobag_backend\\jobagapi.csproj",
         "projectName": "jobagapi",
-        "projectPath": "C:\\Users\\Windows 10\\Desktop\\jobag_backend-main\\jobagapi.csproj",
+        "projectPath": "C:\\Users\\Windows 10\\Documents\\GitHub\\jobag_backend\\jobagapi.csproj",
         "packagesPath": "C:\\Users\\Windows 10\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Windows 10\\Desktop\\jobag_backend-main\\obj\\",
+        "outputPath": "C:\\Users\\Windows 10\\Documents\\GitHub\\jobag_backend\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

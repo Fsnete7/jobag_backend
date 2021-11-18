@@ -12,5 +12,13 @@ namespace jobagapi.Resources.PostulantResources
         [Required]
         [MaxLength(250)]
         public string VideoUrl { get; set; }
+        
+        [Required]
+        [MaxLength(250)]
+        public string Description { get; set; }
+        
+        [Required]
+        [MaxLength(30)]
+        public int postulantId { get; set; }
     }
 }
