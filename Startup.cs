@@ -97,6 +97,24 @@ namespace jobagapi
             
             services.AddScoped<IDegreeRepository, DegreeRepository>();
             services.AddScoped<IDegreeService,DegreeService>();
+            
+            services.AddScoped<IProfessionalRepository, ProfessionalProfileRepository>();
+            services.AddScoped<IProfessionalProfileService,ProfessionalProfileService>();
+            
+            services.AddScoped<ILanguageRepository, LanguageRepository>();
+            services.AddScoped<ILanguageService,LanguageService>();
+            
+            services.AddScoped<ISkillRepository, SkillRepository>();
+            services.AddScoped<ISkillService,SkillService>();
+            
+            services.AddScoped<IProfileSkillRepository, ProfileSkillRepository>();
+            services.AddScoped<IProfileSkillService,ProfileSkillService>();
+            
+            services.AddScoped<IProfileDegreeRepository, ProfileDegreeRepository>();
+            services.AddScoped<IProfileDegreeService,ProfileDegreeService>();
+            
+            services.AddScoped<IProfileLanguageRepository, ProfileLanguageRepository>();
+            services.AddScoped<IProfileLanguageService,ProfileLanguageService>();
 
             services.AddScoped<IUnitOfWork, UnitOfWork>();
            

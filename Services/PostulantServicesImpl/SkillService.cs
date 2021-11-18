@@ -85,8 +85,7 @@ namespace jobagapi.Services.PostulantServicesImpl
 
             if (existingSkill == null)
                 return new SkillResponse("Degree not found.");
-
- 
+            
             try
             {
                 _skillRepository.Update(existingSkill);
