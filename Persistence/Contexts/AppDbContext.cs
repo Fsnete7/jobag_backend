@@ -1,8 +1,14 @@
+<<<<<<< HEAD
 ﻿using System.Net.Mail;
 using jobagapi.Domain.Models;
 using jobagapi.Domain.Models.EmployerSystem;
 using jobagapi.Domain.Models.JobOfferSystem;
 using jobagapi.Domain.Models.PostulantSystem;
+=======
+﻿using jobagapi.Domain.Models;
+using jobagapi.Domain.Models.EmployerSystem;
+using jobagapi.Domain.Models.JobOfferSystem;
+>>>>>>> main
 using jobagapi.Domain.Models.SubscriptionSystem;
 using jobagapi.Extensions;
 using Microsoft.EntityFrameworkCore;
@@ -27,6 +33,7 @@ namespace jobagapi.Persistence.Contexts
         public DbSet<User> Users { get; set; }
         public DbSet<SubscriptionPlan> SubscriptionPlans { get; set; }
         public DbSet<Payment> Payments { get; set; }
+<<<<<<< HEAD
         
         //--------------- Sets Postulant Bounded Context ---------------
         
@@ -40,6 +47,8 @@ namespace jobagapi.Persistence.Contexts
         public DbSet<ProfileLanguage> ProfileLanguages { get; set; }
         public DbSet<ProfileSkill> ProfileSkills { get; set; }
         
+=======
+>>>>>>> main
         
         public AppDbContext(DbContextOptions options) : base(options)
         {
@@ -49,6 +58,7 @@ namespace jobagapi.Persistence.Contexts
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
+<<<<<<< HEAD
             
              //--------------- Degrees ---------------
             // Constrains
@@ -138,6 +148,9 @@ namespace jobagapi.Persistence.Contexts
                 .WithMany(t => t.ProfileSkills)
                 .HasForeignKey(pt => pt.SkillId);
             
+=======
+            /*
+>>>>>>> main
             //--------------- JobOffers ---------------
             // Constrains
             builder.Entity<JobOffer>().ToTable("JobOffers");
@@ -247,6 +260,120 @@ namespace jobagapi.Persistence.Contexts
                     Details = "Detail2"
                 }
             );
+            */
+            //---------------- Subscription Bounded Content -------
+            
+            //---------------- User -------
+            // Constrains
+            builder.Entity<User>().ToTable("Users");
+            builder.Entity<User>().HasKey(p => p.UserId);
+            builder.Entity<User>().Property(p => p.UserId).IsRequired().ValueGeneratedOnAdd();
+            builder.Entity<User>().Property(p => p.FirstName).IsRequired().HasMaxLength(30);
+            builder.Entity<User>().Property(p => p.LastName).IsRequired().HasMaxLength(30);
+            builder.Entity<User>().Property(p => p.Email).IsRequired().HasMaxLength(30);
+            builder.Entity<User>().Property(p => p.PhoneNumber).IsRequired();
+            builder.Entity<User>().Property(p => p.PassWord).IsRequired().HasMaxLength(30);
+            // Relationships
+                //go to postulant, employeer or Payment
+            // Seed Data
+            builder.Entity<User>().HasData
+            (
+                new User
+                {
+                    UserId = 101,
+                    FirstName = "Juan",
+                    LastName = "Perez",
+                    Email = "JuanPerez@gmail.com",
+                    PhoneNumber = 987515252,
+                    PassWord = "123"
+                },
+                new User
+                {
+                    UserId = 102,
+                    FirstName = "Jose",
+                    LastName = "Quispe",
+                    Email = "JoseQuispe@gmail.com",
+                    PhoneNumber = 981515252,
+                    PassWord = "123"
+                }
+            );
+            
+            //---------------- Payment -------
+            // Constrains
+            builder.Entity<Payment>().ToTable("Payments");
+            builder.Entity<Payment>().HasKey(p => p.PaymentId);
+            builder.Entity<Payment>().Property(p => p.PaymentId).IsRequired().ValueGeneratedOnAdd();
+            builder.Entity<Payment>().Property(p => p.CarNumber).IsRequired();
+            builder.Entity<Payment>().Property(p => p.AmountTotal).IsRequired();
+            builder.Entity<Payment>().Property(p => p.Details).IsRequired().HasMaxLength(120);
+            // Relationships
+            builder.Entity<Payment>()
+                .HasMany(p => p.Users)
+                .WithOne(p => p.Payment)
+                .HasForeignKey(p => p.PaymentId);
+            builder.Entity<Payment>()
+                .HasMany(p => p.SubscriptionPlans)
+                .WithOne(p => p.Payment)
+                .HasForeignKey(p => p.PaymentId);
+            // Seed Data
+            builder.Entity<Payment>().HasData
+            (
+                new Payment
+                {
+                    PaymentId = 101,
+                    CarNumber = 987515252,
+                    AmountTotal = 130,
+                    Details = "Detail1"
+                },
+                new Payment
+                {
+                    PaymentId = 102,
+                    CarNumber = 915751555,
+                    AmountTotal = 130,
+                    Details = "Detail2"
+                }
+            );
+            
+            //--------------- SubscriptionPlan ---------------
+            builder.Entity<SubscriptionPlan>().ToTable("SubscriptionPlans");
+            builder.Entity<SubscriptionPlan>().HasKey(p => p.SubscriptionPlanId);
+            builder.Entity<SubscriptionPlan>().Property(p => p.SubscriptionPlanId).IsRequired().ValueGeneratedOnAdd();
+            builder.Entity<SubscriptionPlan>().Property(p => p.Description).IsRequired().HasMaxLength(120);
+            builder.Entity<SubscriptionPlan>().Property(p => p.LimitPostulation).IsRequired();
+            builder.Entity<SubscriptionPlan>().Property(p => p.LimitVideoCreation).IsRequired();
+            builder.Entity<SubscriptionPlan>().Property(p => p.PreDesignTemplates).IsRequired();
+            builder.Entity<SubscriptionPlan>().Property(p => p.Duration).IsRequired();
+            builder.Entity<SubscriptionPlan>().Property(p => p.LimitModification).IsRequired();
+            builder.Entity<SubscriptionPlan>().Property(p => p.Assistance).IsRequired();
+            // Relationships
+                // :C
+            // Seed Data
+            builder.Entity<SubscriptionPlan>().HasData
+            (
+                new SubscriptionPlan
+                {
+                    SubscriptionPlanId = 101,
+                    Description = "Description1",
+                    LimitPostulation = 5,
+                    LimitVideoCreation = 30,
+                    PreDesignTemplates = true,
+                    Duration = 15,
+                    LimitModification = 3,
+                    Assistance = true,
+                },
+                new SubscriptionPlan
+                {
+                    SubscriptionPlanId = 102,
+                    Description = "Description2",
+                    LimitPostulation = 5,
+                    LimitVideoCreation = 30,
+                    PreDesignTemplates = true,
+                    Duration = 15,
+                    LimitModification = 3,
+                    Assistance = false,
+                }
+            );
+            
             
             //--------------- SubscriptionPlan ---------------
             builder.Entity<SubscriptionPlan>().ToTable("SubscriptionPlans");

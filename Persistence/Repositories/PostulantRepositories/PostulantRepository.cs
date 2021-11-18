@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using jobagapi.Domain.Models.PostulantSystem;
@@ -37,5 +38,12 @@ namespace jobagapi.Persistence.Repositories.PostulantPersistence
         {
             await _context.Postulants.AddAsync(postulant);
         }
+=======
+﻿namespace jobagapi.Persistence.Repositories.PostulantRepositories
+{
+    public class PostulantRepository
+    {
+        
+>>>>>>> main
     }
 }

@@ -45,7 +45,10 @@ namespace jobagapi.Services.PostulantServicesImpl
             {
                 await _degreeRepository.AddAsync(degree);
                 await _unitOfWork.CompletedAsync();
+<<<<<<< HEAD
                 
+=======
+>>>>>>> main
                 return new DegreeResponse(degree);
             }
             catch (Exception ex)

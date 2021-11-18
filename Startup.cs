@@ -13,21 +13,33 @@ using System.Linq;
 using System.Threading.Tasks;
 using jobagapi.Domain.Repositories;
 using jobagapi.Domain.Repositories.JobOfferRepositories;
+<<<<<<< HEAD
 using jobagapi.Domain.Repositories.PostulantRepositories;
 using jobagapi.Domain.Repositories.SubscriptionRepositories;
 using jobagapi.Domain.Services;
 using jobagapi.Domain.Services.JobOfferServices;
 using jobagapi.Domain.Services.PostulantServices;
+=======
+using jobagapi.Domain.Repositories.SubscriptionRepositories;
+using jobagapi.Domain.Services;
+using jobagapi.Domain.Services.JobOfferServices;
+>>>>>>> main
 using jobagapi.Domain.Services.SubscriptionServices;
 using jobagapi.Persistence.Contexts;
 using jobagapi.Persistence.Repositories;
 using jobagapi.Persistence.Repositories.JobOfferRepositories;
+<<<<<<< HEAD
 using jobagapi.Persistence.Repositories.PostulantPersistence;
+=======
+>>>>>>> main
 using jobagapi.Persistence.Repositories.SubscriptionPersistence;
 using jobagapi.Persistence.Repositories.SubscriptionRepositories;
 using jobagapi.Services;
 using jobagapi.Services.JobOfferServicesImpl;
+<<<<<<< HEAD
 using jobagapi.Services.PostulantServicesImpl;
+=======
+>>>>>>> main
 using jobagapi.Services.SubscriptionServicesImpl;
 using Microsoft.EntityFrameworkCore;
 
@@ -77,6 +89,7 @@ namespace jobagapi
             services.AddScoped<IPaymentService, PaymentService>();
 
             services.AddScoped<IUnitOfWork, UnitOfWork>();
+<<<<<<< HEAD
            
             
             //--------------- Scoped Postulant Bounded Context ---------------
@@ -105,6 +118,8 @@ namespace jobagapi
             services.AddScoped<IProfileSkillService,ProfileSkillService>();
             
             
+=======
+>>>>>>> main
             services.AddAutoMapper(typeof(Startup));
         }
 
