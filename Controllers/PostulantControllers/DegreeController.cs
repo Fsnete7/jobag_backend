@@ -54,7 +54,7 @@ namespace jobagapi.Controllers.PostulantControllers
                 return BadRequest(ModelState.GetErrorMessages());
 
             var degree = _mapper.Map<SaveDegreeResource, Degree>(resource);
-            var result = await _degreeService.UpdateAsync(id,degree);
+            var result = await _degreeService.UpdateAsync(id, degree);
             
             if (!result.Success)
                 return BadRequest(result.Message);
