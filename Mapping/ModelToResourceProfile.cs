@@ -13,7 +13,6 @@ namespace jobagapi.Mapping
 {
     public class ModelToResourceProfile : Profile
     {
-<<<<<<< HEAD
         public ModelToResourceProfile()
         {
             CreateMap<SubscriptionPlan, SubscriptionPlanResource>();
@@ -27,8 +26,5 @@ namespace jobagapi.Mapping
             CreateMap<Skill, SkillResource>();
             CreateMap<Degree, DegreeResource>();
         }
-=======
-        //delete file
->>>>>>> main
     }
 }

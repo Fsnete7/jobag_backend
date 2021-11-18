@@ -13,33 +13,21 @@ using System.Linq;
 using System.Threading.Tasks;
 using jobagapi.Domain.Repositories;
 using jobagapi.Domain.Repositories.JobOfferRepositories;
-<<<<<<< HEAD
 using jobagapi.Domain.Repositories.PostulantRepositories;
 using jobagapi.Domain.Repositories.SubscriptionRepositories;
 using jobagapi.Domain.Services;
 using jobagapi.Domain.Services.JobOfferServices;
 using jobagapi.Domain.Services.PostulantServices;
-=======
-using jobagapi.Domain.Repositories.SubscriptionRepositories;
-using jobagapi.Domain.Services;
-using jobagapi.Domain.Services.JobOfferServices;
->>>>>>> main
 using jobagapi.Domain.Services.SubscriptionServices;
 using jobagapi.Persistence.Contexts;
 using jobagapi.Persistence.Repositories;
 using jobagapi.Persistence.Repositories.JobOfferRepositories;
-<<<<<<< HEAD
 using jobagapi.Persistence.Repositories.PostulantPersistence;
-=======
->>>>>>> main
 using jobagapi.Persistence.Repositories.SubscriptionPersistence;
 using jobagapi.Persistence.Repositories.SubscriptionRepositories;
 using jobagapi.Services;
 using jobagapi.Services.JobOfferServicesImpl;
-<<<<<<< HEAD
 using jobagapi.Services.PostulantServicesImpl;
-=======
->>>>>>> main
 using jobagapi.Services.SubscriptionServicesImpl;
 using Microsoft.EntityFrameworkCore;
 
@@ -52,7 +40,7 @@ namespace jobagapi
             Configuration = configuration;
         }
 
-        public IConfiguration Configuration { get; set; }
+        public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
@@ -66,9 +54,15 @@ namespace jobagapi
                 options.UseInMemoryDatabase("jobag-api-in-memory");
             });
             
+            services.AddCors(options =>
+            {
+                options.AddPolicy("Jobag",
+                    builder => builder.AllowAnyOrigin());
+            });
+            
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Jobag API", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Jobag_API", Version = "v1" });
             });
             
             //--------------- Employer Bounded Context ---------------
@@ -89,7 +83,6 @@ namespace jobagapi
             services.AddScoped<IPaymentService, PaymentService>();
 
             services.AddScoped<IUnitOfWork, UnitOfWork>();
-<<<<<<< HEAD
            
             
             //--------------- Scoped Postulant Bounded Context ---------------
@@ -118,8 +111,6 @@ namespace jobagapi
             services.AddScoped<IProfileSkillService,ProfileSkillService>();
             
             
-=======
->>>>>>> main
             services.AddAutoMapper(typeof(Startup));
         }
 
@@ -130,7 +121,7 @@ namespace jobagapi
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Jobag API v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Jobag_API v1"));
             }
 
             app.UseHttpsRedirection();
