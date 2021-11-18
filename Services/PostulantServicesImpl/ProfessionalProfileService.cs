@@ -69,5 +69,25 @@ namespace jobagapi.Services.PostulantServicesImpl
             }
         }
 
+        public async Task<ProfessionalProfileResponse> UpdateAsync(int id, ProfessionalProfile profile)
+        {
+            var existingProfile = await _professionalRepository.FindById(id);
+
+            if (existingProfile == null)
+                return new ProfessionalProfileResponse("Profile not found.");
+
+ 
+            try
+            {
+                _professionalRepository.Update(existingProfile);
+                await _unitOfWork.CompletedAsync();
+
+                return new ProfessionalProfileResponse(existingProfile);
+            }
+            catch (Exception e)
+            {
+                return new ProfessionalProfileResponse($"An error ocurred while saving the Profile: {e.Message}");
+            }
+        }
     }
 }

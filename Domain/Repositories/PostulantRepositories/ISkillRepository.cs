@@ -9,8 +9,7 @@ namespace jobagapi.Domain.Repositories.PostulantRepositories
     {
         Task AddAsync(Skill skill);
         void Remove(Skill skill);
-        Task AssignSkill(int profileId, int skillId);
-        void UnassignSkill(int profileId, int skillId);
+        void Update(Skill skill);
         Task<Skill> FindById(int id);
         Task<IEnumerable<Skill>> ListAsync();
     }

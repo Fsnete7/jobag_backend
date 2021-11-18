@@ -1,5 +1,9 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using jobagapi.Resources.SubscriptionResources;
+<<<<<<< HEAD
+ 
+=======
+>>>>>>> main
 
 namespace jobagapi.Resources.PostulantResources
 {

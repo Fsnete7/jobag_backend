@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
+  "dgSpecHash": "ZG/xMcOi+p5gzQSAoxdp0VZ54TFu+0ZTyxg8DcByFzxYyW8oiRwcTRb8f9k3A3JstwgmRcjjrwGXNQYbAjNtQA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Windows 10\\Desktop\\jobag_backend-main\\jobagapi.csproj",
+=======
   "dgSpecHash": "vQvv60rGiP6g+nnxpaitRaZp6JsE6VuWkQWzJuA0q5knDVj4EdrvTmFV6zwDcXri3WxMhfXb2LnrL9YQkqzzGg==",
   "success": true,
   "projectFilePath": "C:\\Users\\eliza\\RiderProjects\\jobag_backend666\\jobagapi.csproj",
+>>>>>>> main
   "expectedPackageFiles": [
     "C:\\Users\\eliza\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\eliza\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",

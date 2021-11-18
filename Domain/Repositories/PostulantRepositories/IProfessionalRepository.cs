@@ -8,8 +8,10 @@ namespace jobagapi.Domain.Repositories.PostulantRepositories
     {
         Task AddAsync(ProfessionalProfile profile);
         Task<ProfessionalProfile> FindById(int id);
+        
+        void Update(ProfessionalProfile professionalProfile);
         void Remove(ProfessionalProfile profile);
         Task<IEnumerable<ProfessionalProfile>> ListAsync();
-        Task<ProfessionalProfile> FindByPostulantIdAndProfileId(int postulantId, int profileId);
+ 
     }
 }

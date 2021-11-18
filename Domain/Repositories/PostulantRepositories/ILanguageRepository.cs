@@ -9,10 +9,8 @@ namespace jobagapi.Domain.Repositories.PostulantRepositories
     {
         Task AddAsync(Language language);
         void Remove(Language language);
-        Task AssignLanguage(int profileId, int languageId);
-        void UnassignLanguage(int profileId, int languageId);
-
         Task<Language> FindById(int id);
+        void Update(Language language);
         Task<IEnumerable<Language>> ListAsync();
     }
 }

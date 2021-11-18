@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using jobagapi.Domain.Models.PostulantSystem;
 using jobagapi.Domain.Repositories;
@@ -13,11 +14,13 @@ namespace jobagapi.Services.PostulantServicesImpl
     {
         private readonly ILanguageRepository _languageRepository;
         private readonly IUnitOfWork _unitOfWork;
+        private readonly IProfileLanguageRepository _profileLanguageRepository;
         
-        public LanguageService(ILanguageRepository languageRepository, IUnitOfWork unitOfWork)
+        public LanguageService(ILanguageRepository languageRepository, IUnitOfWork unitOfWork, IProfileLanguageRepository profileLanguageRepository)
         {
             _languageRepository = languageRepository;
             _unitOfWork = unitOfWork;
+            _profileLanguageRepository = profileLanguageRepository;
         }
         
         public async Task<LanguageResponse> GetByIdAsync(int id)
@@ -27,6 +30,13 @@ namespace jobagapi.Services.PostulantServicesImpl
             if(existingLanguage == null)
                 return new LanguageResponse("Language not found");
             return new LanguageResponse(existingLanguage);
+        }
+
+        public async Task<IEnumerable<Language>> ListByProfileIdAsync(int profileId)
+        {
+            var profileLanguages = await _profileLanguageRepository.ListByProfileIdAsync(profileId);
+            var languages = profileLanguages.Select(pt => pt.Language).ToList();
+            return languages;
         }
 
         public async Task<LanguageResponse> SaveAsync(Language language)
@@ -65,6 +75,27 @@ namespace jobagapi.Services.PostulantServicesImpl
             catch (Exception ex)
             {
                 return new LanguageResponse($"An error has ocurred while deleting language: {ex.Message}");
+            }
+        }
+
+        public async Task<LanguageResponse> UpdateAsync(int id, Language language)
+        {
+            var existingLanguage = await _languageRepository.FindById(id);
+
+            if (existingLanguage == null)
+                return new LanguageResponse("Language not found.");
+
+ 
+            try
+            {
+                _languageRepository.Update(existingLanguage);
+                await _unitOfWork.CompletedAsync();
+
+                return new LanguageResponse(existingLanguage);
+            }
+            catch (Exception e)
+            {
+                return new LanguageResponse($"An error ocurred while saving the Degree: {e.Message}");
             }
         }
     }

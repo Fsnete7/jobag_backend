@@ -9,8 +9,7 @@ namespace jobagapi.Domain.Repositories.PostulantRepositories
     {
         Task AddAsync(Degree degree);
         void Remove(Degree degree);
-        Task AssignDegree(int profileId, int degreeId);
-        void UnassignDegree(int profileId, int degreeId);
+        void Update(Degree degree);
         Task<Degree> FindById(int id);
         Task<IEnumerable<Degree>> ListAsync();
     }

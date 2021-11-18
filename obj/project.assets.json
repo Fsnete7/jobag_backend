@@ -5455,11 +5455,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
+      "projectUniqueName": "C:\\Users\\Windows 10\\Desktop\\jobag_backend-main\\jobagapi.csproj",
+      "projectName": "jobagapi",
+      "projectPath": "C:\\Users\\Windows 10\\Desktop\\jobag_backend-main\\jobagapi.csproj",
+      "packagesPath": "C:\\Users\\Windows 10\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Windows 10\\Desktop\\jobag_backend-main\\obj\\",
+=======
       "projectUniqueName": "C:\\Users\\eliza\\RiderProjects\\jobag_backend666\\jobagapi.csproj",
       "projectName": "jobagapi",
       "projectPath": "C:\\Users\\eliza\\RiderProjects\\jobag_backend666\\jobagapi.csproj",
       "packagesPath": "C:\\Users\\eliza\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\eliza\\RiderProjects\\jobag_backend666\\obj\\",
+>>>>>>> main
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\eliza\\AppData\\Roaming\\NuGet\\NuGet.Config",
