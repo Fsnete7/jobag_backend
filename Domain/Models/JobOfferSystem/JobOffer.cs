@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace jobagapi.Domain.Models.JobOfferSystem
 {
@@ -12,5 +13,9 @@ namespace jobagapi.Domain.Models.JobOfferSystem
         public string Workplace { get; set; }
         public DateTime Date { get; set; }
         public string Experience { get; set; }
+        
+        public Contract Contract { get; set; }
+        public List<Postulation> Postulations { get; set; }
+        public List<Interview> Interviews { get; set; }
     }
 }

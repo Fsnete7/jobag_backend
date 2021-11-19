@@ -4,7 +4,10 @@ using AutoMapper;
 using jobagapi.Domain.Models.JobOfferSystem;
 using jobagapi.Domain.Services;
 using jobagapi.Extensions;
+<<<<<<< HEAD:Controllers/JobOfferControllers/InterviewsController.cs
+=======
 using jobagapi.Resources;
+>>>>>>> main:Controllers/JobOffer/InterviewsController.cs
 using jobagapi.Resources.JobOfferResources;
 using Microsoft.AspNetCore.Mvc;
 
@@ -23,10 +26,10 @@ namespace jobagapi.Controllers.JobOfferControllers
         }
 
         [HttpGet]
-        public async Task<IEnumerable<interviewResource>> GetAllAsync()
+        public async Task<IEnumerable<InterviewResource>> GetAllAsync()
         {
             var interviews = await _interviewService.ListAsync();
-            var resources = _mapper.Map<IEnumerable<Interview>, IEnumerable<interviewResource>>(interviews);
+            var resources = _mapper.Map<IEnumerable<Interview>, IEnumerable<InterviewResource>>(interviews);
             return resources;
         }
 
@@ -42,11 +45,15 @@ namespace jobagapi.Controllers.JobOfferControllers
             if (!result.Success)
                 return BadRequest(result.Message);
 
+<<<<<<< HEAD:Controllers/JobOfferControllers/InterviewsController.cs
+            var interviewResource = _mapper.Map<Interview, InterviewResource>(result.Resource);
+=======
             var interviewResource = _mapper.Map<Interview, SaveInterviewResource>(result.Resource);
+>>>>>>> main:Controllers/JobOffer/InterviewsController.cs
             return Ok(interviewResource);
         }
 
-        [HttpPut("{id}")]
+        [HttpPut("{id:int}")]
         public async Task<IActionResult> PutAsync(int id, [FromBody] SaveInterviewResource resource)
         {
             if (!ModelState.IsValid)
@@ -58,20 +65,30 @@ namespace jobagapi.Controllers.JobOfferControllers
             if (!result.Success)
                 return BadRequest(result.Message);
 
+<<<<<<< HEAD:Controllers/JobOfferControllers/InterviewsController.cs
+            var interviewResource = _mapper.Map<Interview,InterviewResource>(result.Resource);
+=======
             var interviewResource = _mapper.Map<Interview, SaveInterviewResource>(result.Resource);
+>>>>>>> main:Controllers/JobOffer/InterviewsController.cs
             return Ok(interviewResource);
         }
 
-        [HttpDelete("{id}")]
+        [HttpDelete("{id:int}")]
         public async Task<IActionResult> DeleteAsync(int id)
         {
-            var result = await _interviewService.DeletAsync(id);
+            var result = await _interviewService.DeleteAsync(id);
                
             if (!result.Success)
                 return BadRequest(result.Message);
 
+<<<<<<< HEAD:Controllers/JobOfferControllers/InterviewsController.cs
+            var interviewResource = _mapper.Map<Interview, InterviewResource>(result.Resource);
+=======
             var interviewResource = _mapper.Map<Interview, SaveInterviewResource>(result.Resource);
+>>>>>>> main:Controllers/JobOffer/InterviewsController.cs
             return Ok(interviewResource);
         }
     }
+
+
 }

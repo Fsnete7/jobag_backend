@@ -23,10 +23,10 @@ namespace jobagapi.Controllers.JobOfferControllers
         }
 
         [HttpGet]
-        public async Task<IEnumerable<contractResource>> GetAllAsync()
+        public async Task<IEnumerable<ContractResource>> GetAllAsync()
         {
             var contracts = await _contractService.ListAsync();
-            var resources = _mapper.Map<IEnumerable<Contract>, IEnumerable<contractResource>>(contracts);
+            var resources = _mapper.Map<IEnumerable<Contract>, IEnumerable<ContractResource>>(contracts);
             return resources;
         }
 
@@ -42,7 +42,11 @@ namespace jobagapi.Controllers.JobOfferControllers
             if (!result.Success)
                 return BadRequest(result.Message);
 
+<<<<<<< HEAD:Controllers/JobOfferControllers/ContractsController.cs
+            var contractResource = _mapper.Map<Contract, ContractResource>(result.Resource);
+=======
             var contractResource = _mapper.Map<Contract, SaveContractResource>(result.Resource);
+>>>>>>> main:Controllers/JobOffer/ContractsController.cs
             return Ok(contractResource);
         }
 
@@ -58,19 +62,27 @@ namespace jobagapi.Controllers.JobOfferControllers
             if (!result.Success)
                 return BadRequest(result.Message);
 
+<<<<<<< HEAD:Controllers/JobOfferControllers/ContractsController.cs
+            var jobOfferResource = _mapper.Map<Contract, ContractResource>(result.Resource);
+=======
             var jobOfferResource = _mapper.Map<Contract, SaveContractResource>(result.Resource);
+>>>>>>> main:Controllers/JobOffer/ContractsController.cs
             return Ok(jobOfferResource);
         }
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteAsync(int id)
         {
-            var result = await _contractService.DeletAsync(id);
+            var result = await _contractService.DeleteAsync(id);
                
             if (!result.Success)
                 return BadRequest(result.Message);
 
+<<<<<<< HEAD:Controllers/JobOfferControllers/ContractsController.cs
+            var contractResource = _mapper.Map<Contract, ContractResource>(result.Resource);
+=======
             var contractResource = _mapper.Map<Contract, SaveContractResource>(result.Resource);
+>>>>>>> main:Controllers/JobOffer/ContractsController.cs
             return Ok(contractResource);
         }
     }

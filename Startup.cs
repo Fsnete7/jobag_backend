@@ -24,6 +24,10 @@ using jobagapi.Domain.Services.SubscriptionServices;
 using jobagapi.Persistence.Contexts;
 using jobagapi.Persistence.Repositories;
 using jobagapi.Persistence.Repositories.EmployerRepositories;
+<<<<<<< HEAD
+using jobagapi.Persistence.Repositories.JobOfferPersistence;
+=======
+>>>>>>> main
 using jobagapi.Persistence.Repositories.JobOfferRepositories;
 using jobagapi.Persistence.Repositories.PostulantPersistence;
 using jobagapi.Persistence.Repositories.SubscriptionPersistence;
@@ -85,6 +89,17 @@ namespace jobagapi
             services.AddScoped<IJobOfferRepository, JobOfferRepository>();
             services.AddScoped<IJobOfferService, JobOfferService>();
             
+<<<<<<< HEAD
+            services.AddScoped<IPostulationRepository, PostulationRepository>();
+            services.AddScoped<IPostulationService, PostulationService>();
+            
+            services.AddScoped<IInterviewRepository, InterviewRepository>();
+            services.AddScoped<IInterviewService, InterviewService>();
+            
+            services.AddScoped<IContractRepository, ContractRepository>();
+            services.AddScoped<IContractService, ContractService>();
+=======
+>>>>>>> main
             
             
             //--------------- Scoped Subscription Bounded Context ---------------

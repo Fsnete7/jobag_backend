@@ -308,6 +308,78 @@ namespace jobagapi.Persistence.Contexts
                 .OnDelete(DeleteBehavior.Cascade);
 
             
+<<<<<<< HEAD
+            
+            
+            
+            
+            
+            //---------------- Postulations -------
+            // Constrains
+            builder.Entity<Postulation>().ToTable("Postulations");
+            builder.Entity<Postulation>().HasKey(p => p.PostulationId);
+            builder.Entity<Postulation>().Property(p => p.PostulationId).IsRequired().ValueGeneratedOnAdd();
+            builder.Entity<Postulation>().Property(p => p.UrlVideo).IsRequired();
+            builder.Entity<Postulation>().Property(p => p.Accepted).IsRequired();
+            // Relationships
+            builder.Entity<Postulation>()
+                .HasOne(pt => pt.JobOffer)
+                .WithMany(p => p.Postulations)
+                .HasForeignKey(pt => pt.JobOfferId);
+            
+            //builder.Entity<Postulation>()
+            //.HasOne(pt => pt.Postulant)
+            //.WithMany(t => t.ProfileDegrees)
+            //  .HasForeignKey(pt => pt.DegreeId);
+              
+              
+            // Seed Data
+            
+            
+            //---------------- Interviews -------
+            // Constrains
+            builder.Entity<Interview>().ToTable("Interview");
+            builder.Entity<Interview>().HasKey(p => p.Id);
+            builder.Entity<Interview>().Property(p => p.Id).IsRequired().ValueGeneratedOnAdd();
+            builder.Entity<Interview>().Property(p => p.Duration).IsRequired();
+            builder.Entity<Interview>().Property(p => p.Link).IsRequired();
+            builder.Entity<Interview>().Property(p => p.Pending).IsRequired();
+            builder.Entity<Interview>().Property(p => p.StartDate).IsRequired();
+            // Relationships
+            builder.Entity<Interview>()
+                .HasOne(pt => pt.JobOffer)
+                .WithMany(p => p.Interviews)
+                .HasForeignKey(pt => pt.JobOfferId);
+            
+            //builder.Entity<Postulation>()
+            //.HasOne(pt => pt.Postulant)
+            //.WithMany(t => t.ProfileDegrees)
+            //  .HasForeignKey(pt => pt.DegreeId);
+            
+            // Seed Data
+            
+            
+            //---------------- Contracts -------
+            // Constrains
+            builder.Entity<Contract>().ToTable("Contracts");
+            builder.Entity<Contract>().HasKey(p => p.Id);
+            builder.Entity<Contract>().Property(p => p.Id).IsRequired().ValueGeneratedOnAdd();
+            builder.Entity<Contract>().Property(p => p.Confirmation).IsRequired();
+            builder.Entity<Contract>().Property(p => p.Description).IsRequired();
+            // Relationships
+            builder.Entity<Contract>()
+                .HasOne(pt => pt.JobOffer)
+                .WithOne(p => p.Contract)
+                .HasForeignKey<Contract>(a => a.JobOfferId);
+            
+            
+            //builder.Entity<Postulation>()
+            //.HasOne(pt => pt.Postulant)
+            //.WithMany(t => t.ProfileDegrees)
+            //  .HasForeignKey(pt => pt.DegreeId);
+
+=======
+>>>>>>> main
             builder.UseSnakeCaseNamingConvention();
         }
     }
