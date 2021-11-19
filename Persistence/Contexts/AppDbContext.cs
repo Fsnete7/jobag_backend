@@ -71,6 +71,17 @@ namespace jobagapi.Persistence.Contexts
             builder.Entity<Skill>().Property(p => p.Name).IsRequired().HasMaxLength(50);
             builder.Entity<Skill>().Property(p => p.Description).IsRequired().HasMaxLength(250);
             
+            //---------------- Postulant -------
+            // Constrains
+            builder.Entity<Postulant>().ToTable("Postulants");
+            builder.Entity<Postulant>().Property(p => p.FirstName).IsRequired().HasMaxLength(30);
+            builder.Entity<Postulant>().Property(p => p.LastName).IsRequired().HasMaxLength(30);
+            builder.Entity<Postulant>().Property(p => p.Email).IsRequired().HasMaxLength(30);
+            builder.Entity<Postulant>().Property(p => p.PhoneNumber).IsRequired();
+            builder.Entity<Postulant>().Property(p => p.PassWord).IsRequired().HasMaxLength(30);
+            builder.Entity<Postulant>().Property(p => p.CivilStatus).IsRequired().HasMaxLength(30);
+            
+            
             //--------------- Professional Profiles ---------------
             // Constrains
             builder.Entity<ProfessionalProfile>().ToTable("ProfessionalProfiles");
