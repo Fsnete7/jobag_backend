@@ -42,7 +42,11 @@ namespace jobagapi.Controllers.JobOfferControllers
             if (!result.Success)
                 return BadRequest(result.Message);
 
+<<<<<<< HEAD:Controllers/JobOfferControllers/ContractsController.cs
             var contractResource = _mapper.Map<Contract, ContractResource>(result.Resource);
+=======
+            var contractResource = _mapper.Map<Contract, SaveContractResource>(result.Resource);
+>>>>>>> main:Controllers/JobOffer/ContractsController.cs
             return Ok(contractResource);
         }
 
@@ -58,7 +62,11 @@ namespace jobagapi.Controllers.JobOfferControllers
             if (!result.Success)
                 return BadRequest(result.Message);
 
+<<<<<<< HEAD:Controllers/JobOfferControllers/ContractsController.cs
             var jobOfferResource = _mapper.Map<Contract, ContractResource>(result.Resource);
+=======
+            var jobOfferResource = _mapper.Map<Contract, SaveContractResource>(result.Resource);
+>>>>>>> main:Controllers/JobOffer/ContractsController.cs
             return Ok(jobOfferResource);
         }
 
@@ -70,7 +78,11 @@ namespace jobagapi.Controllers.JobOfferControllers
             if (!result.Success)
                 return BadRequest(result.Message);
 
+<<<<<<< HEAD:Controllers/JobOfferControllers/ContractsController.cs
             var contractResource = _mapper.Map<Contract, ContractResource>(result.Resource);
+=======
+            var contractResource = _mapper.Map<Contract, SaveContractResource>(result.Resource);
+>>>>>>> main:Controllers/JobOffer/ContractsController.cs
             return Ok(contractResource);
         }
     }

@@ -308,6 +308,7 @@ namespace jobagapi.Persistence.Contexts
                 .OnDelete(DeleteBehavior.Cascade);
 
             
+<<<<<<< HEAD
             
             
             
@@ -377,6 +378,8 @@ namespace jobagapi.Persistence.Contexts
             //.WithMany(t => t.ProfileDegrees)
             //  .HasForeignKey(pt => pt.DegreeId);
 
+=======
+>>>>>>> main
             builder.UseSnakeCaseNamingConvention();
         }
     }

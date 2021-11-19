@@ -12,12 +12,8 @@ namespace jobagapi.Domain.Repositories
 
         Task<Interview> FindByIdAsync(int id);
 
-        void Update(Interview interview);
+        void update(Interview interview);
 
-        void Remove(Interview interview);
-        
-        Task<IEnumerable<Interview>> ListByJobOfferIdAsync(int jobOfferId);
-        Task<IEnumerable<Interview>> ListByPostulantIdAsync(int postulantId);
-        Task<Interview> FindByJobOfferIdAndPostulantId(int jobOfferId, int postulantId);
+        void Delete(Interview interview);
     }
 }

@@ -201,6 +201,7 @@ C:\Users\eliza\RiderProjects\jobag_backend111\obj\Debug\net5.0\scopedcss\bundle\
 C:\Users\eliza\RiderProjects\jobag_backend111\obj\Debug\net5.0\jobagapi.RazorTargetAssemblyInfo.cache
 C:\Users\eliza\RiderProjects\jobag_backend111\obj\Debug\net5.0\jobagapi.csproj.CopyComplete
 C:\Users\eliza\RiderProjects\jobag_backend111\obj\Debug\net5.0\jobagapi.genruntimeconfig.cache
+<<<<<<< HEAD
 C:\Users\Victo\Desktop\jobag vvv\jobag_backend-main\bin\Debug\net5.0\appsettings.Development.json
 C:\Users\Victo\Desktop\jobag vvv\jobag_backend-main\bin\Debug\net5.0\appsettings.json
 C:\Users\Victo\Desktop\jobag vvv\jobag_backend-main\bin\Debug\net5.0\global.json
@@ -283,3 +284,5 @@ C:\Users\Victo\Desktop\jobag vvv - contracts sin put\jobag_backend-main\obj\Debu
 C:\Users\Victo\Desktop\jobag vvv - contracts sin put\jobag_backend-main\obj\Debug\net5.0\ref\jobagapi.dll
 C:\Users\Victo\Desktop\jobag vvv - contracts sin put\jobag_backend-main\obj\Debug\net5.0\jobagapi.pdb
 C:\Users\Victo\Desktop\jobag vvv - contracts sin put\jobag_backend-main\obj\Debug\net5.0\jobagapi.genruntimeconfig.cache
+=======
+>>>>>>> main

@@ -5450,11 +5450,16 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\Victo\\.nuget\\packages\\": {}
+=======
+    "C:\\Users\\eliza\\.nuget\\packages\\": {}
+>>>>>>> main
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\Victo\\Desktop\\jobag vvv - contracts sin put\\jobag_backend-main\\jobagapi.csproj",
       "projectName": "jobagapi",
       "projectPath": "C:\\Users\\Victo\\Desktop\\jobag vvv - contracts sin put\\jobag_backend-main\\jobagapi.csproj",
@@ -5463,6 +5468,16 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Victo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+      "projectUniqueName": "C:\\Users\\eliza\\RiderProjects\\jobag_backend111\\jobagapi.csproj",
+      "projectName": "jobagapi",
+      "projectPath": "C:\\Users\\eliza\\RiderProjects\\jobag_backend111\\jobagapi.csproj",
+      "packagesPath": "C:\\Users\\eliza\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\eliza\\RiderProjects\\jobag_backend111\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\eliza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> main
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5541,7 +5556,11 @@
             "privateAssets": "all"
           }
         },
+<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+=======
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+>>>>>>> main
       }
     }
   }

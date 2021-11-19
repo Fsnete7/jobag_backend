@@ -4,6 +4,10 @@ using AutoMapper;
 using jobagapi.Domain.Models.JobOfferSystem;
 using jobagapi.Domain.Services;
 using jobagapi.Extensions;
+<<<<<<< HEAD:Controllers/JobOfferControllers/InterviewsController.cs
+=======
+using jobagapi.Resources;
+>>>>>>> main:Controllers/JobOffer/InterviewsController.cs
 using jobagapi.Resources.JobOfferResources;
 using Microsoft.AspNetCore.Mvc;
 
@@ -41,7 +45,11 @@ namespace jobagapi.Controllers.JobOfferControllers
             if (!result.Success)
                 return BadRequest(result.Message);
 
+<<<<<<< HEAD:Controllers/JobOfferControllers/InterviewsController.cs
             var interviewResource = _mapper.Map<Interview, InterviewResource>(result.Resource);
+=======
+            var interviewResource = _mapper.Map<Interview, SaveInterviewResource>(result.Resource);
+>>>>>>> main:Controllers/JobOffer/InterviewsController.cs
             return Ok(interviewResource);
         }
 
@@ -57,7 +65,11 @@ namespace jobagapi.Controllers.JobOfferControllers
             if (!result.Success)
                 return BadRequest(result.Message);
 
+<<<<<<< HEAD:Controllers/JobOfferControllers/InterviewsController.cs
             var interviewResource = _mapper.Map<Interview,InterviewResource>(result.Resource);
+=======
+            var interviewResource = _mapper.Map<Interview, SaveInterviewResource>(result.Resource);
+>>>>>>> main:Controllers/JobOffer/InterviewsController.cs
             return Ok(interviewResource);
         }
 
@@ -69,7 +81,11 @@ namespace jobagapi.Controllers.JobOfferControllers
             if (!result.Success)
                 return BadRequest(result.Message);
 
+<<<<<<< HEAD:Controllers/JobOfferControllers/InterviewsController.cs
             var interviewResource = _mapper.Map<Interview, InterviewResource>(result.Resource);
+=======
+            var interviewResource = _mapper.Map<Interview, SaveInterviewResource>(result.Resource);
+>>>>>>> main:Controllers/JobOffer/InterviewsController.cs
             return Ok(interviewResource);
         }
     }
