@@ -25,23 +25,45 @@ namespace jobagapi.Services.EmployerServicesImpl
             return await _sectorRepository.ListAsync();
         }
 
-        public async Task<SectorResponse> SaveAsync(Sector sector)
+        public async Task<SaveSectorResponse> SaveAsync(Sector sector)
         {
             try
             {
                 await _sectorRepository.AddAsync(sector);
                 await _unitOfWork.CompletedAsync();
 
-                return new SectorResponse(sector);
+                return new SaveSectorResponse(sector);
             }
             catch (Exception e)
             {
-                return new SectorResponse($"An error ocurred while saving the sector: {e.Message}");
+                return new SaveSectorResponse($"An error ocurred while saving the sector: {e.Message}");
             }
         }
 
+        public async Task<SaveSectorResponse> UpdateAsync(int id, Sector jobOffer)
+        {
+            var existingSector = await _sectorRepository.FindByIdAsync(id);
+
+            if (existingSector == null)
+                return new SaveSectorResponse("Sector not found.");
+
+            existingSector.Name = jobOffer.Name;
+            existingSector.Description = jobOffer.Description;
+         
+            try
+            {
+                _sectorRepository.Update(existingSector);
+                await _unitOfWork.CompletedAsync();
+
+                return new SaveSectorResponse(existingSector);
+            }
+            catch (Exception e)
+            {
+                return new SaveSectorResponse($"An error occurred while saving the Sector: {e.Message}");
+            }
+        }
        
-        public async Task<SectorResponse> DeletAsync(int id)
+        public async Task<SectorResponse> DeleteAsync(int id)
         {
             var existingSector = await _sectorRepository.FindByIdAsync(id);
             

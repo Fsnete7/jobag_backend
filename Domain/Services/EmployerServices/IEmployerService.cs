@@ -11,11 +11,11 @@ namespace jobagapi.Domain.Services.EmployerServices
     {
         
         Task<IEnumerable<Employer>> ListAsync();
-        Task<EmployerResponse> SaveAsync(Employer employer);
+        Task<SaveEmployerResponse> SaveAsync(Employer employer);
 
-        Task<EmployerResponse> UpdateAsync(int id, Employer employer);
+        Task<SaveEmployerResponse> UpdateAsync(int id, Employer employer);
 
-        Task<EmployerResponse> DeletAsync(int id);
+        Task<EmployerResponse> DeleteAsync(int id);
         
     }
 }

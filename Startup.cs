@@ -74,11 +74,18 @@ namespace jobagapi
             services.AddScoped<IEmployerRepository, EmployerRepository>();
             services.AddScoped<IEmployerService, EmployerService>();
             
-            
+            services.AddScoped<ICompanyProfileRepository, CompanyProfileRepository>();
+            services.AddScoped<ICompanyProfileService, CompanyProfileService>();
+
+            services.AddScoped<ISectorRepository, SectorRepository>();
+            services.AddScoped<ISectorService, SectorService>();
+
             //--------------- Scoped Job Offer Bounded Context ---------------
 
             services.AddScoped<IJobOfferRepository, JobOfferRepository>();
             services.AddScoped<IJobOfferService, JobOfferService>();
+            
+            
             
             //--------------- Scoped Subscription Bounded Context ---------------
             

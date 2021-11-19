@@ -10,10 +10,10 @@ namespace jobagapi.Domain.Services.EmployerServices
     {
         
         Task<IEnumerable<CompanyProfile>> ListAsync();
-        Task<CompanyProfileResponse> SaveAsync(CompanyProfile companyProfile);
+        Task<SaveCompanyProfileResponse> SaveAsync(CompanyProfile companyProfile);
 
-        Task<CompanyProfileResponse> UpdateAsync(int id, CompanyProfile companyProfile);
+        Task<SaveCompanyProfileResponse> UpdateAsync(int id, CompanyProfile companyProfile);
 
-        Task<CompanyProfileResponse> DeletAsync(int id);
+        Task<CompanyProfileResponse> DeleteAsync(int id);
     }
 }

@@ -30,7 +30,7 @@ namespace jobagapi.Controllers.EmployerControllers
         }
 
         [HttpPost]
-        public async Task<ActionResult> PostAsync([FromBody] SaveEmployerResource resource)
+        public async Task<IActionResult> PostAsync([FromBody] SaveEmployerResource resource)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState.GetErrorMessages());
@@ -40,7 +40,7 @@ namespace jobagapi.Controllers.EmployerControllers
 
             if (!result.Success)
                 return BadRequest(result.Message);
-            var employerResource = _mapper.Map<Employer, SaveEmployerResource>(result.Resource);
+            var employerResource = _mapper.Map<Employer, EmployerResource>(result.Resource);
             return Ok(employerResource);
         }
         
@@ -56,19 +56,19 @@ namespace jobagapi.Controllers.EmployerControllers
             if (!result.Success)
                 return BadRequest(result.Message);
 
-            var employerResource = _mapper.Map<Employer, SaveEmployerResource>(result.Resource);
+            var employerResource = _mapper.Map<Employer, EmployerResource>(result.Resource);
             return Ok(employerResource);
         } 
         
         [HttpDelete("{id:int}")]
         public async Task<IActionResult> DeleteAsync(int id)
         {
-            var result = await _employerService.DeletAsync(id);
+            var result = await _employerService.DeleteAsync(id);
                
             if (!result.Success)
                 return BadRequest(result.Message);
 
-            var employerResource = _mapper.Map<Employer, SaveEmployerResource>(result.Resource);
+            var employerResource = _mapper.Map<Employer, EmployerResource>(result.Resource);
             return Ok(employerResource);
         }
     }

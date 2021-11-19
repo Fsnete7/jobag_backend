@@ -26,6 +26,8 @@ namespace jobagapi.Mapping
 
             //--------------- Scoped Employer Bounded Context ---------------
             CreateMap<Employer, EmployerResource>();
+            CreateMap<CompanyProfile, CompanyProfileResource>();
+            CreateMap<Sector, SectorResource>();
             
             //--------------- Scoped Subscription Bounded Context ---------------
             CreateMap<Payment, PaymentResource>();

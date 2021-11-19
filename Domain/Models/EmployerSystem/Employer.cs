@@ -6,6 +6,7 @@ namespace jobagapi.Domain.Models.EmployerSystem
 {
     public class Employer : User
     {
-        public int Position { get; set; }
+        public string Position { get; set; }
+        public CompanyProfile CompanyProfile { get; set; }
     }
 }
