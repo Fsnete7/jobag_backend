@@ -14,6 +14,6 @@ namespace jobagapi.Domain.Services
 
         Task<SaveContractResponse> UpdateAsync(int id, Contract contract);
 
-        Task<ContractResponse> DeleteAsync(int id);  
+        Task<ContractResponse> DeletAsync(int id);  
     }
 }

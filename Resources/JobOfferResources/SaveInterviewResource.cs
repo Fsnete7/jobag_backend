@@ -8,16 +8,17 @@ namespace jobagapi.Resources.JobOfferResources
         [Required]
         [MaxLength(250)]
         public string Link { get; set; }
-        [Required]
-        public double Duration { get; set; }
-        [Required]
-        public DateTime StartDate { get; set; }
-        [Required]
-        public bool Pending { get; set; }
         
         [Required]
-        public int JobOfferId { get; set; }
+        [MaxLength(30)]
+        public double Duration { get; set; }
+        
         [Required]
-        public int PostulantId { get; set; }
+        [MaxLength(30)]
+        public DateTime StartDate { get; set; }
+        
+        [Required]
+        [MaxLength(30)]
+        public bool Pending { get; set; }
     }
 }

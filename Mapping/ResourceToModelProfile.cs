@@ -36,14 +36,6 @@ namespace jobagapi.Mapping
             CreateMap<SaveEmployerResource, Employer>();
             CreateMap<SaveSectorResource, Sector>();
             CreateMap<SaveCompanyProfileResource, CompanyProfile>();
-<<<<<<< HEAD
-            
-            //--------------- Scoped JobOffer Bounded Context ---------------
-            CreateMap<SavePostulationResource, Postulation>();
-            CreateMap<SaveInterviewResource, Interview>();
-            CreateMap<SaveContractResource, Contract>();
-=======
->>>>>>> main
         }
     }
 }
