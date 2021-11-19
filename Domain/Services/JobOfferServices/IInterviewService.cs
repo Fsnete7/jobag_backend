@@ -14,11 +14,6 @@ namespace jobagapi.Domain.Services
 
         Task<SaveInterviewResponse> UpdateAsync(int id, Interview interview);
 
-        Task<InterviewResponse> DeleteAsync(int id);  
-        
-        
-        
-        Task<IEnumerable<Interview>> ListByPostulantId(int postulantId);
-        Task<IEnumerable<Interview>> ListByOfferIdAsync(int offerId);
+        Task<InterviewResponse> DeletAsync(int id);  
     }
 }

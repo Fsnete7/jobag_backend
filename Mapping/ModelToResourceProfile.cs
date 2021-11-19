@@ -24,14 +24,6 @@ namespace jobagapi.Mapping
             CreateMap<Skill, SkillResource>();
             CreateMap<Degree, DegreeResource>();
 
-<<<<<<< HEAD
-            
-            CreateMap<Postulation, PostulationResource>();
-            CreateMap<Interview, InterviewResource>();
-            CreateMap<Contract, ContractResource>();
-            
-=======
->>>>>>> main
             //--------------- Scoped Employer Bounded Context ---------------
             CreateMap<Employer, EmployerResource>();
             CreateMap<CompanyProfile, CompanyProfileResource>();
