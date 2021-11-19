@@ -1,7 +1,6 @@
-﻿using jobagapi.Domain.Models;
-using jobagapi.Persistence.Contexts;
+﻿using jobagapi.Persistence.Contexts;
 
-namespace jobagapi.Persistence.Repositories.JobOffer
+namespace jobagapi.Persistence.Repositories
 {
     public abstract class BaseRepository
     {

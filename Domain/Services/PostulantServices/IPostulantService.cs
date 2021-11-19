@@ -11,5 +11,7 @@ namespace jobagapi.Domain.Services.PostulantServices
         Task<PostulantResponse> SaveAsync(Postulant postulant);
         Task<IEnumerable<Postulant>> ListAsync();
         Task<PostulantResponse> DeleteAsync(int id);
+        
+        Task<PostulantResponse> UpdateAsync(int id, Postulant postulant);
     }
 }

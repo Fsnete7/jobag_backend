@@ -10,6 +10,6 @@ namespace jobagapi.Domain.Repositories.PostulantRepositories
         Task<Postulant> FindById(int id);
         void Update(Postulant postulant);
         void Remove(Postulant postulant);
-        Task<IEnumerable<Postulant>> FindPostulantByName(string name);
+        Task AddAsync(Postulant postulant);
     }
 }

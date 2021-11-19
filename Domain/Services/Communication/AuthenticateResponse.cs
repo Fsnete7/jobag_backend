@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using jobagapi.Domain.Models.PostulantSystem;
+﻿using jobagapi.Domain.Models.SubscriptionSystem;
 
 namespace jobagapi.Domain.Services.Communication
 {
@@ -14,7 +10,7 @@ namespace jobagapi.Domain.Services.Communication
 
         public AuthenticateResponse(User user, string token)
         {
-            Id = user.Id;
+            Id = user.UserId;
             Email = user.Email;
             Token = token;
         }
