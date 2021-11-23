@@ -17,7 +17,6 @@ namespace jobagapi.Mapping
         {
 
             //--------------- Scoped Postulant Bounded Context ---------------
-            CreateMap<JobOffer, jobOfferResource>();
             CreateMap<Postulant, PostulantResource>();
             CreateMap<ProfessionalProfile, ProfessionalProfileResource>();
             CreateMap<Language, LanguageResource>();
@@ -27,6 +26,7 @@ namespace jobagapi.Mapping
             CreateMap<Postulation, PostulationResource>();
             CreateMap<Interview, InterviewResource>();
             CreateMap<Contract, ContractResource>();
+            CreateMap<JobOffer, JobOfferResource>();
             
             //--------------- Scoped Employer Bounded Context ---------------
             CreateMap<Employer, EmployerResource>();

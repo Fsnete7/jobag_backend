@@ -49,6 +49,13 @@ namespace jobagapi.Services.JobOfferServicesImpl
                 return new JobOfferResponse("Job Offer not found.");
 
             existingJobOffer.Name = jobOffer.Name;
+            existingJobOffer.Description = jobOffer.Description;
+            existingJobOffer.Type = jobOffer.Type;
+            existingJobOffer.Salary = jobOffer.Salary;
+            existingJobOffer.Workplace = jobOffer.Workplace;
+            existingJobOffer.Date = jobOffer.Date;
+            existingJobOffer.Experience = jobOffer.Experience;
+            
             try
             {
                 _jobOfferRepository.update(existingJobOffer);

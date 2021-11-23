@@ -27,6 +27,26 @@ namespace jobagapi.Controllers.JobOfferControllers
             var resources = _mapper.Map<IEnumerable<Postulation>, IEnumerable<PostulationResource>>(postulations);
             return resources;
         }
+        
+        [HttpGet]
+        [Route("/api/v1/joboffer/{jobOfferId}/[controller]")]
+        public async Task<IEnumerable<PostulationResource>> GetAllPostulationsByJobOfferId(int jobOfferId)
+        {
+            var postulations = await _postulationService.ListByOfferIdAsync(jobOfferId);
+            var resources = _mapper.Map<IEnumerable<Postulation>, IEnumerable<PostulationResource>>(postulations);
+            return resources;
+        }
+        
+        [HttpGet]
+        [Route("/api/v1/postulant/{postulantId}/[controller]")]
+        public async Task<IEnumerable<PostulationResource>> GetAllPostulationsByPostulantId(int postulantId)
+        {
+            var postulations = await _postulationService.ListByPostulantIdAsync(postulantId);
+            var resources = _mapper.Map<IEnumerable<Postulation>, IEnumerable<PostulationResource>>(postulations);
+            return resources;
+        }
+        
+        
         [HttpPost]
         public async Task<IActionResult> PostAsync([FromBody] SavePostulationResource resource) 
         {

@@ -6,11 +6,11 @@ namespace jobagapi.Resources.JobOfferResources
     public class SaveJobOfferResource
     {
         [Required]
-        [MaxLength(50)]
+        [MaxLength(250)]
         public string Name { get; set; }
         
         [Required]
-        [MaxLength(30)]
+        [MaxLength(250)]
         public string Type { get; set; }
         
         [Required]
@@ -21,7 +21,7 @@ namespace jobagapi.Resources.JobOfferResources
         public string Description { get; set; }
         
         [Required]
-        [MaxLength(30)]
+        [MaxLength(250)]
         public string Workplace { get; set; }
         
         [Required]

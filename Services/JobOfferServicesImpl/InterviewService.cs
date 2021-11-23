@@ -90,7 +90,7 @@ namespace jobagapi.Services.JobOfferServicesImpl
 
         public async Task<IEnumerable<Interview>> ListByOfferIdAsync(int offerId)
         {
-            return await _interviewRepository.ListByPostulantIdAsync(offerId);
+            return await _interviewRepository.ListByJobOfferIdAsync(offerId);
         }
     }
 }

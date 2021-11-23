@@ -148,7 +148,14 @@ namespace jobagapi
             }
 
             app.UseHttpsRedirection();
-
+            
+            app.UseCors(options =>
+            {
+                options.WithOrigins("*");
+                options.AllowAnyMethod();
+                options.AllowAnyHeader();
+            });
+            
             app.UseRouting();
 
             app.UseAuthorization();

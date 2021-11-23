@@ -22,10 +22,10 @@ namespace jobagapi.Controllers.JobOfferControllers
         }
 
         [HttpGet]
-        public async Task<IEnumerable<jobOfferResource>> GetAllAsync()
+        public async Task<IEnumerable<JobOfferResource>> GetAllAsync()
         {
             var jobOffers = await _jobOfferService.ListAsync();
-            var resources = _mapper.Map<IEnumerable<JobOffer>, IEnumerable<jobOfferResource>>(jobOffers);
+            var resources = _mapper.Map<IEnumerable<JobOffer>, IEnumerable<JobOfferResource>>(jobOffers);
             return resources;
         }
 
@@ -41,7 +41,7 @@ namespace jobagapi.Controllers.JobOfferControllers
             if (!result.Success)
                 return BadRequest(result.Message);
 
-            var jobOfferResource = _mapper.Map<JobOffer, SaveJobOfferResource>(result.Resource);
+            var jobOfferResource = _mapper.Map<JobOffer, JobOfferResource>(result.Resource);
             return Ok(jobOfferResource);
         }
 
@@ -57,7 +57,7 @@ namespace jobagapi.Controllers.JobOfferControllers
             if (!result.Success)
                 return BadRequest(result.Message);
 
-            var jobOfferResource = _mapper.Map<JobOffer, SaveJobOfferResource>(result.Resource);
+            var jobOfferResource = _mapper.Map<JobOffer, JobOfferResource>(result.Resource);
             return Ok(jobOfferResource);
         }
 
@@ -69,7 +69,7 @@ namespace jobagapi.Controllers.JobOfferControllers
             if (!result.Success)
                 return BadRequest(result.Message);
 
-            var jobOfferResource = _mapper.Map<JobOffer, SaveJobOfferResource>(result.Resource);
+            var jobOfferResource = _mapper.Map<JobOffer, JobOfferResource>(result.Resource);
             return Ok(jobOfferResource);
         }
     }

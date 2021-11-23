@@ -10,9 +10,8 @@ namespace jobagapi
         public static void Main(string[] args)
         {
             // Para usar datos de prueba
-            
+
             var host = CreateHostBuilder(args).Build();
-            
             using(var scope = host.Services.CreateScope())
             using (var context = scope.ServiceProvider.GetService<AppDbContext>())
             {

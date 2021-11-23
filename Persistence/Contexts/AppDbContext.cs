@@ -330,10 +330,10 @@ namespace jobagapi.Persistence.Contexts
                 .WithMany(p => p.Postulations)
                 .HasForeignKey(pt => pt.JobOfferId);
             
-            //builder.Entity<Postulation>()
-            //.HasOne(pt => pt.Postulant)
-            //.WithMany(t => t.ProfileDegrees)
-            //  .HasForeignKey(pt => pt.DegreeId);
+            builder.Entity<Postulation>()
+            .HasOne(pt => pt.Postulant)
+            .WithMany(t => t.Postulations)
+            .HasForeignKey(pt => pt.PostulantId);
               
               
             // Seed Data
@@ -354,10 +354,10 @@ namespace jobagapi.Persistence.Contexts
                 .WithMany(p => p.Interviews)
                 .HasForeignKey(pt => pt.JobOfferId);
             
-            //builder.Entity<Postulation>()
-            //.HasOne(pt => pt.Postulant)
-            //.WithMany(t => t.ProfileDegrees)
-            //  .HasForeignKey(pt => pt.DegreeId);
+            builder.Entity<Interview>()
+                .HasOne(pt => pt.Postulant)
+                .WithMany(t => t.Interviews)
+                .HasForeignKey(pt => pt.PostulantId);
             
             // Seed Data
             
